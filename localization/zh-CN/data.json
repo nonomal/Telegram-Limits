@@ -1,16 +1,17 @@
 {
   "accounts": {
-    "name": "个人账号相关",
+    "name": "账户",
     "items": {
       "username": {
         "name": "用户名",
         "hint": "（例：@cameraman）",
-        "text": "5 ~ 32 个字符"
+        "text": "5 到 32 个字符，对于 NFT 用户名，最低为 4 个字符"
       },
       "bio": {
         "name": "个人简介",
         "hint": "",
-        "text": "最多 70 个字符"
+        "text": "up to 70 characters",
+        "text_premium": "up to 140 characters"
       },
       "name_length": {
         "name": "名字长度",
@@ -25,27 +26,25 @@
       "self_destruction": {
         "name": "账户自动销毁时限",
         "hint": "（长时间无登录活动）",
-        "text": "1、3、6 或 12 个月 (默认 6 个月)"
+        "text": "1, 3, 6, 12, 18, 24 (12 by default)"
       },
       "spam_ban": {
         "name": "恶意灌水封禁时长",
         "hint": "",
-        "text": "3 天或以上"
+        "text": "1 天 ~ 永久",
+        "text_premium": "from 1 second up to forever"
       },
       "channels_and_chats_number": {
         "name": "频道和超级群组数量",
         "hint": "你可以加入的",
-        "text": "最多 500（包括您创建的）"
-      },
-      "geochats_number": {
-        "name": "当地群组数量",
-        "hint": "你可以加入的",
-        "text": "最多 5 个（包括你创建的）"
+        "text": "up to 500 (including ones you own)",
+        "text_premium": "up to 1000 (including ones you own)"
       },
       "gifs_number": {
         "name": "保存在 GIF 库的 GIF 数量",
         "hint": "",
-        "text": "最多 200"
+        "text": "up to 200",
+        "text_premium": "up to 400"
       },
       "video_length": {
         "name": "视频头像时长",
@@ -60,7 +59,13 @@
       "accounts_number": {
         "name": "同时登录的账号数",
         "hint": "（官方客户端）",
-        "text": "最多 3 个"
+        "text": "up to 3",
+        "text_premium": "up to 4-6 (depends on app)"
+      },
+      "visible_messages": {
+        "name": "可见消息数量",
+        "hint": "（在私聊、机器人和传统群组间共享限制）",
+        "text": "无限；2018 年前 - 最多 100 万条消息可见：参阅 https://twitter.com/telegram/status/1060910769410371584"
       }
     }
   },
@@ -85,7 +90,7 @@
       "pinned_number": {
         "name": "客户端主页面的置顶群聊数",
         "hint": "",
-        "text": "最多 5 个群聊 / 频道 + 5 个私密聊天"
+        "text": "最多 5 个对话或频道 + 5 个加密对话；对高级用户最多 10 个对话或频道"
       },
       "group_name": {
         "name": "群组名称和简介",
@@ -123,7 +128,7 @@
         "text": "不限"
       },
       "participants_to_see_stats": {
-        "name": "使“统计数据”可用的频道订阅者 / 群聊成员数",
+        "name": "查看统计数据所需的成员数量",
         "hint": "",
         "text": "至少 500"
       },
@@ -213,9 +218,9 @@
         "text": "最多 50 个"
       },
       "editing": {
-        "name": "推文可编辑次数",
+        "name": "编辑帖子",
         "hint": "",
-        "text": "不限（如果频道有讨论组，发送超过 2 周的推文不会在讨论组中更新）"
+        "text": "不限（如果频道有讨论组，发送超过 2 周的帖子不会在讨论组中更新）"
       },
       "subscribers": {
         "name": "频道订阅者数",
@@ -265,12 +270,12 @@
       "media_descriptions": {
         "name": "媒体的描述",
         "hint": "",
-        "text": "最多 1,024 个字符"
+        "text": "最多 1024 字符；对高级用户最多 2048 字符"
       },
       "upload_size": {
         "name": "单文件大小限制",
         "hint": "",
-        "text": "最大 2 GB"
+        "text": "最大 2 GB；对高级用户最大 4 GB"
       },
       "file_name_length": {
         "name": "文件名长度限制",
@@ -290,7 +295,7 @@
       "delayed_messages": {
         "name": "计划信息数量",
         "hint": "",
-        "text": "最多 100 个"
+        "text": "最多 100 项目 (每对话)"
       },
       "delaying_messages": {
         "name": "可计划的日程范围",
@@ -305,12 +310,12 @@
       "folder_amount": {
         "name": "文件夹数量",
         "hint": "",
-        "text": "最多 10 个文件夹"
+        "text": "最多 10 个文件夹；对高级用户最多 30 个文件夹"
       },
       "pinned_chats_in_folder": {
         "name": "单个文件夹中可置顶的聊天数",
         "hint": "",
-        "text": "最多 100 个"
+        "text": "最多 100 个对话；对高级用户最多 200 个对话"
       }
     }
   },
@@ -359,18 +364,23 @@
       },
       "upload_limit_botapi": {
         "name": "上传文件大小限制",
-        "hint": "(Bot API)",
+        "hint": "不使用本地 Bot API 后端",
         "text": "最大 50 MB"
+      },
+      "upload_limit_botapi_local": {
+        "name": "上传文件大小限制",
+        "hint": "使用本地 Bot API 后端",
+        "text": "最大 2000 MB"
       },
       "download_limit_botapi": {
         "name": "下载文件大小限制",
-        "hint": "(Bot API)",
+        "hint": "不使用本地 Bot API 后端",
         "text": "最大 20 MB"
       },
-      "forwarding": {
-        "name": "转发消息",
-        "hint": "",
-        "text": "最快每小时 2000 条"
+      "download_limit_botapi_local": {
+        "name": "下载文件大小限制",
+        "hint": "使用本地 Bot API 后端",
+        "text": "最大 2000 MB"
       },
       "keys_in_keyboard_number": {
         "name": "键盘按钮数",
@@ -378,8 +388,8 @@
         "text": "最多 100 个实体"
       },
       "formatting_data": {
-        "name": "消息格式化数据",
-        "hint": "",
+        "name": "消息的 markup 数据",
+        "hint": "例：内联按钮",
         "text": "最大 10 KB"
       },
       "formatting_entities": {
@@ -387,15 +397,20 @@
         "hint": "（加粗、斜体...）",
         "text": "最多 100 个"
       },
-      "messaging_frequency": {
-        "name": "发送消息频率",
-        "hint": "(可由 Bot Support 提升)",
-        "text": "每秒最多 30 条消息；公开群聊和频道中每分钟最多 20 条消息"
+      "messaging_frequency_broadcast": {
+        "name": "消息广播速率",
+        "hint": "仅适用于主动发送通知到不活跃的聊天",
+        "text": "对话中每秒最多 30 条消息"
       },
-      "api_requests_frequency": {
-        "name": "API 请求频率",
-        "hint": "(可由 Bot Support 提升)",
-        "text": "每秒最多 30 个请求"
+      "messaging_frequency": {
+        "name": "消息发送速率",
+        "hint": "任意对话中",
+        "text": "每秒最多约 1 条消息（短时间连发的情况可能不包括在内）"
+      },
+      "messaging_frequency_groups": {
+        "name": "消息发送速率",
+        "hint": "在群组中",
+        "text": "同对话中每秒最多 20 条消息"
       },
       "bot_commands_count": {
         "name": "指令数量",
@@ -410,27 +425,22 @@
       "bot_command_description_length": {
         "name": "指令描述长度",
         "hint": "",
-        "text": "Bot Father 中最少 2 字符，Bot API 中最少 3 字符；最多 256 字符"
+        "text": "最多 256 个字符；在通过 Bot API 设置时不可为空"
       },
       "start_payload_size": {
-        "name": "/start 命令 (Deep linking) 的元数据长度",
-        "hint": "",
-        "text": "最多 64 个字符"
+        "name": "/start 命令的元数据长度",
+        "hint": "（深度链接中）",
+        "text": "最多 64 字节"
       },
       "bot_alert_length": {
         "name": "弹窗提示文本（响应回调时）",
         "hint": "",
         "text": "最多 200 个字符"
       },
-      "username_resolve_limit": {
-        "name": "用户名解析限制",
-        "hint": "(机器人和用户都适用)",
-        "text": "每天最多 200 个用户名"
-      },
       "inline_max_items": {
         "name": "内联查询结果数",
         "hint": "",
-        "text": "最多 50 项"
+        "text": "每页最多 50 条"
       }
     }
   },
@@ -440,12 +450,17 @@
       "global_search": {
         "name": "全局搜索结果",
         "hint": "",
-        "text": "展示 10 项（安卓客户端中 3 项）"
+        "text": ""
       },
       "global_search_min_query": {
         "name": "搜索内容字数",
         "hint": "（全局搜索）",
         "text": "至少 4 个字符"
+      },
+      "username_resolve_limit": {
+        "name": "用户名解析限制",
+        "hint": "（包括机器人和用户）",
+        "text": "每天至多 200 个用户名"
       }
     }
   },
@@ -460,7 +475,7 @@
       "favorite_stickers": {
         "name": "收藏贴纸数",
         "hint": "",
-        "text": "最多 5 个"
+        "text": "最多 5 项；对高级用户最多 10 项"
       },
       "pack_size": {
         "name": "单个贴纸包中的贴纸数",
@@ -521,6 +536,11 @@
         "name": "视频头像属性",
         "hint": "",
         "text": "800x800px，最大 2 MB"
+      },
+      "photo_resolution": {
+        "name": "照片分辨率",
+        "hint": "当以非原图模式发送时",
+        "text": "每边应小于等于 1280px，否则将被压缩以使最大边为 1280px"
       }
     }
   }

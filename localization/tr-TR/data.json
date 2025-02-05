@@ -4,13 +4,14 @@
     "items": {
       "username": {
         "name": "Kullanıcı Adı",
-        "hint": "(örn. @kameraman)",
-        "text": "5 ila 32 karakter"
+        "hint": "(örn. @cameraman)",
+        "text": "NFT kullanıcı adları için 4 karakterden başlayarak 5 ila 32 karakter"
       },
       "bio": {
         "name": "Biyografi",
         "hint": "",
-        "text": "70 karaktere kadar"
+        "text": "up to 70 characters",
+        "text_premium": "up to 140 characters"
       },
       "name_length": {
         "name": "Ad uzunluğu",
@@ -25,27 +26,25 @@
       "self_destruction": {
         "name": "Kendini imha aralığı",
         "hint": "(hareket yoksa)",
-        "text": "1, 3, 6 ve 12 ay (varsayılan 6)"
+        "text": "1, 3, 6, 12, 18, 24 (12 by default)"
       },
       "spam_ban": {
         "name": "Spam engeli",
         "hint": "",
-        "text": "3 gün ve daha fazla"
+        "text": "1 günden sonsuza kadar",
+        "text_premium": "from 1 second up to forever"
       },
       "channels_and_chats_number": {
         "name": "Kanal ve grup sayısı",
         "hint": "üye olabileceğiniz",
-        "text": "500’e kadar (kendinizinkiler dahil)"
-      },
-      "geochats_number": {
-        "name": "Konuma dayalı sohbet sayısı",
-        "hint": "üye olabileceğiniz grup sayısı",
-        "text": "5’e kadar (kendinizinkiler dahil)"
+        "text": "up to 500 (including ones you own)",
+        "text_premium": "up to 1000 (including ones you own)"
       },
       "gifs_number": {
         "name": "Kayıtlı GIF sayısı",
         "hint": "",
-        "text": "200'e kadar"
+        "text": "up to 200",
+        "text_premium": "up to 400"
       },
       "video_length": {
         "name": "Video profil süresi",
@@ -60,7 +59,13 @@
       "accounts_number": {
         "name": "Hesap sayısı",
         "hint": "(resmi istemciler)",
-        "text": "3'e kadar"
+        "text": "up to 3",
+        "text_premium": "up to 4-6 (depends on app)"
+      },
+      "visible_messages": {
+        "name": "Görünen mesaj sayısı",
+        "hint": "(özel sohbetler, botlar ve eski gruplar arasında paylaşılan sınır)",
+        "text": "unlimited; before 2018 year - up to 1,000,000 visible messages: see https://twitter.com/telegram/status/1060910769410371584"
       }
     }
   },
@@ -85,7 +90,7 @@
       "pinned_number": {
         "name": "Ana listede sabit sohbetler",
         "hint": "",
-        "text": "5 sohbet veya kanal + 5 gizli sohbet"
+        "text": "up to 5 chats or channels + 5 secret chats; for Premium users - up to 10 chats or channels"
       },
       "group_name": {
         "name": "Grup adı ve açıklaması",
@@ -103,7 +108,7 @@
         "text": "1 ila 60 saniye"
       },
       "recent_actions": {
-        "name": "Son hareketler",
+        "name": "Son eylemler",
         "hint": "(abonelikler, paylaşımlar vb.)",
         "text": "iki gün öncesi"
       },
@@ -123,9 +128,9 @@
         "text": "sınırsız"
       },
       "participants_to_see_stats": {
-        "name": "İstatistikleri görmek için katılımcı sayısı",
+        "name": "İstatistikleri görmek için üye sayısı",
         "hint": "",
-        "text": "en az 500"
+        "text": "En az 500"
       },
       "username_reservation": {
         "name": "Kullanıcı adı değişim rezervasyonu",
@@ -265,12 +270,12 @@
       "media_descriptions": {
         "name": "Medya açıklaması",
         "hint": "",
-        "text": "1,024 karaktere kadar"
+        "text": "1024 karaktere kadar; Premium kullanıcılar için - 2048 karaktere kadar"
       },
       "upload_size": {
         "name": "Dosya boyut sınırı",
         "hint": "",
-        "text": "2.0 GB'a kadar"
+        "text": "2 GB'a kadar; Premium kullanıcılar için - 4 GB'a kadar"
       },
       "file_name_length": {
         "name": "Dosya adı uzunluğu",
@@ -290,7 +295,7 @@
       "delayed_messages": {
         "name": "Zamanlanmış mesaj sayısı",
         "hint": "",
-        "text": "100 öğeye kadar"
+        "text": "100 öğeye kadar (her sohbet için)"
       },
       "delaying_messages": {
         "name": "Zamanlama aralığı",
@@ -305,12 +310,12 @@
       "folder_amount": {
         "name": "Klasör miktarı",
         "hint": "",
-        "text": "10 klasöre kadar"
+        "text": "10 klasöre kadar; Premium kullanıcılar için - 30 klasöre kadar"
       },
       "pinned_chats_in_folder": {
         "name": "Bir klasördeki sabit sohbetler",
         "hint": "",
-        "text": "100 sohbete kadar"
+        "text": "100 sohbete kadar; Premium kullanıcılar için - 200 sohbete kadar"
       }
     }
   },
@@ -359,18 +364,23 @@
       },
       "upload_limit_botapi": {
         "name": "Dosya yükleme sınırı",
-        "hint": "(BotAPI)",
+        "hint": "yerel Bot API sunucusu olmadan",
         "text": "50 MB'a kadar"
+      },
+      "upload_limit_botapi_local": {
+        "name": "Dosya yükleme sınırı",
+        "hint": "yerel Bot API sunucusu ile",
+        "text": "2000 MB'a kadar"
       },
       "download_limit_botapi": {
         "name": "Dosya indirme sınırı",
-        "hint": "(BotAPI)",
+        "hint": "yerel Bot API sunucusu olmadan",
         "text": "20 MB'a kadar"
       },
-      "forwarding": {
-        "name": "Mesaj iletme",
-        "hint": "",
-        "text": "saatte 2,000’e kadar"
+      "download_limit_botapi_local": {
+        "name": "Dosya indirme sınırı",
+        "hint": "yerel Bot API sunucusu ile",
+        "text": "2000 MB'a kadar"
       },
       "keys_in_keyboard_number": {
         "name": "Klavye buton sayısı",
@@ -378,8 +388,8 @@
         "text": "100'e kadar"
       },
       "formatting_data": {
-        "name": "Mesaj biçimlendirme verisi",
-        "hint": "",
+        "name": "Mesaj biçimlendirme verileri",
+        "hint": "örneğin satıriçi düğmeler",
         "text": "10 KB'a kadar"
       },
       "formatting_entities": {
@@ -387,15 +397,20 @@
         "hint": "(kalın, eğik vb.)",
         "text": "100 öğeye kadar"
       },
-      "messaging_frequency": {
-        "name": "Mesaj sıklığı",
-        "hint": "(BotSupport tarafından yükseltilebilir)",
-        "text": "saniyede 30 mesaja kadar; genel sohbet ve kanallar için dakikada 20"
+      "messaging_frequency_broadcast": {
+        "name": "Mesaj yayınlama sıklığı",
+        "hint": "yalnızca etkin olmayan sohbetlere etkin olarak bildirim gönderirken geçerlidir",
+        "text": "sohbetler arasında saniyede 30 mesaja kadar"
       },
-      "api_requests_frequency": {
-        "name": "API isteklerinin sıklığı‌‌",
-        "hint": "(BotSupport tarafından yükseltilebilir)",
-        "text": "saniyede 30 isteğe kadar‌‌"
+      "messaging_frequency": {
+        "name": "Mesaj gönderme sıklığı",
+        "hint": "herhangi bir sohbette",
+        "text": "belki kısa süreli yoğun göndermeler hariç, saniyede kabaca bir mesaja kadar"
+      },
+      "messaging_frequency_groups": {
+        "name": "Mesaj gönderme sıklığı",
+        "hint": "grup sohbetlerinde",
+        "text": "aynı sohbette saniyede 20 mesaja kadar"
       },
       "bot_commands_count": {
         "name": "Komut miktarı‌‌",
@@ -410,27 +425,22 @@
       "bot_command_description_length": {
         "name": "Komut açıklama uzunluğu‌‌",
         "hint": "",
-        "text": "minimum: Botfather'da 2 sembol, Bot API'nda 3 sembol; maksimum: her ikisinde de 256 karakter"
+        "text": "256 karaktere kadar, bot API üzerinden ayarlandığında boş olmamalıdır"
       },
       "start_payload_size": {
         "name": "Bot /start veri uzunluğu",
-        "hint": "",
-        "text": "64 karaktere kadar"
+        "hint": "uygulama bağlantılarında kullanılan",
+        "text": "64 byte'a kadar"
       },
       "bot_alert_length": {
         "name": "Bot uyarı mesajı uzunluğu",
         "hint": "",
         "text": "200 karaktere kadar"
       },
-      "username_resolve_limit": {
-        "name": "Kullanıcı adı çözüm sınırı",
-        "hint": "(hem botlar hem de kullanıcı hesapları için)",
-        "text": "günlük 200 kullanıcı adına kadar"
-      },
       "inline_max_items": {
         "name": "Satır içi sonuç sayısı",
         "hint": "",
-        "text": "50 öğeye kadar"
+        "text": "sayfa başına 50 öğeye kadar"
       }
     }
   },
@@ -440,12 +450,17 @@
       "global_search": {
         "name": "Küresel arama sonuçları",
         "hint": "",
-        "text": "10 öğeye kadar; Android için 3"
+        "text": ""
       },
       "global_search_min_query": {
         "name": "Gerekli karakter uzunluğu",
         "hint": "küresel arama için",
         "text": "en az 4 karakter"
+      },
+      "username_resolve_limit": {
+        "name": "Username resolve limit",
+        "hint": "(hem botlar hem de kullanıcı hesapları için)",
+        "text": "günlük 200 adede kadar kullanıcı adı"
       }
     }
   },
@@ -460,7 +475,7 @@
       "favorite_stickers": {
         "name": "Favori çıkartma sayısı",
         "hint": "",
-        "text": "5 öğeye kadar"
+        "text": "5 öğeye kadar; Premium kullanıcılar için - 10 öğeye kadar"
       },
       "pack_size": {
         "name": "Tek paketteki çıkartma sayısı",
@@ -521,6 +536,11 @@
         "name": "Video profil özellikleri",
         "hint": "",
         "text": "800x800px, 2 MB'a kadar"
+      },
+      "photo_resolution": {
+        "name": "Fotoğraf çözünürlüğü",
+        "hint": "sıkıştırarak gönderince",
+        "text": "her kenarı 1280px'e eşit veya daha az olmalı, aksi takdirde küçültülecek ve en büyük kenarı 1280px olacak"
       }
     }
   }

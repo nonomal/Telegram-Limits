@@ -1,16 +1,17 @@
 {
   "accounts": {
-    "name": "Hisob raqam",
+    "name": "Hisob raqamlar",
     "items": {
       "username": {
         "name": "Foydalanuvchi nomi",
-        "hint": "(foydalanuvchi nomi; masalan @cameraman)",
-        "text": "5 dan 32 tagacha "
+        "hint": "(masalan: @cameraman)",
+        "text": "5 dan 32 tagacha belgi, NFT nomlar uchun 4 ta belgidan boshlab"
       },
       "bio": {
-        "name": "Tarjimai hol (bio)",
+        "name": "\"Men haqimda\" bo'limi",
         "hint": "",
-        "text": "70 tagacha "
+        "text": "up to 70 characters",
+        "text_premium": "up to 140 characters"
       },
       "name_length": {
         "name": "Ism uzunligi",
@@ -18,34 +19,32 @@
         "text": "1 dan 64 tagacha belgi"
       },
       "last_name_length": {
-        "name": "Familiya hajmi",
+        "name": "Familiya uzunligi",
         "hint": "",
         "text": "0 dan 64 tagacha belgi"
       },
       "self_destruction": {
-        "name": "O'zini-o'zi yo'q qilish davri",
-        "hint": "Faol bo'lmagan davrda",
-        "text": "1, 3, 6 va 12 oy (sukut qilish 6)"
+        "name": "Akkauntning o'z-o'zini yo'q qilish davri",
+        "hint": "faollik kuzatilmasa",
+        "text": "1, 3, 6, 12, 18, 24 (12 by default)"
       },
       "spam_ban": {
-        "name": "Spam",
+        "name": "Spam taqiq",
         "hint": "",
-        "text": "3 kun yoki undan ko'proq"
+        "text": "1-kundan boshlab umrbod",
+        "text_premium": "from 1 second up to forever"
       },
       "channels_and_chats_number": {
         "name": "Kanallar va superguruhlar soni",
-        "hint": "siz a'zo bo'lishingiz mumkin",
-        "text": "500 tagacha (shu jumladan o'zingizniki)"
-      },
-      "geochats_number": {
-        "name": "Geochatlat soni",
-        "hint": "siz a'zo bo'lishingiz mumkin",
-        "text": "5 tagacha (shu jumladan o'zingizniki)"
+        "hint": "siz a'zo bo'lishingiz mumkin bo'lgan",
+        "text": "up to 500 (including ones you own)",
+        "text_premium": "up to 1000 (including ones you own)"
       },
       "gifs_number": {
-        "name": "Saqlangan Giflar soni",
+        "name": "Saqlangan GIFlar soni",
         "hint": "",
-        "text": "200 gacha"
+        "text": "up to 200",
+        "text_premium": "up to 400"
       },
       "video_length": {
         "name": "Video-avatar davomiyligi",
@@ -53,14 +52,20 @@
         "text": "10 soniyagacha"
       },
       "groups_and_channels_creation": {
-        "name": "Guruh va kanal yaratish",
+        "name": "Guruh va kanal ochish",
         "hint": "",
-        "text": "Kuniga 50 tagacha"
+        "text": "kuniga 50 tagacha"
       },
       "accounts_number": {
-        "name": "Hisoblar soni",
+        "name": "Hisob raqamlar soni",
         "hint": "(rasmiy mijozlar)",
-        "text": "3 tagacha"
+        "text": "up to 3",
+        "text_premium": "up to 4-6 (depends on app)"
+      },
+      "visible_messages": {
+        "name": "Ko'rinadigan xabarlar soni",
+        "hint": "(shaxsiy chatlar, botlar va oddiy guruhlar orasidagi umumiy limit)",
+        "text": "cheksiz; 2018 yilgacha - 1 000 000 tagacha ko'rinadigan xabarlar: Batafsil: https://twitter.com/telegram/status/1060910769410371584"
       }
     }
   },
@@ -69,23 +74,23 @@
     "items": {
       "participants_number": {
         "name": "Ishtirokchilar",
-        "hint": "(Cheklov oshishi mumkin)",
-        "text": "200,000 tagacha, lekin Translyatsiya guruhlarida cheksiz"
+        "hint": "(cheklov oshirilishi mumkin)",
+        "text": "200 000 tagacha, lekin Translyatsiya guruhlarida cheksiz"
       },
       "admins_number": {
-        "name": "Adminlar soni",
-        "hint": "Guruhlarda",
+        "name": "Administratorlar soni",
+        "hint": "guruhlarda",
         "text": "50 tagacha"
       },
       "bots_amount": {
-        "name": "Bot yaratishlar soni",
-        "hint": "Guruhlarda",
+        "name": "Botlar soni",
+        "hint": "guruhlarda",
         "text": "20 tagacha"
       },
       "pinned_number": {
-        "name": "Qadalgan xabarlardagi asosiy ro'yxat",
+        "name": "Ro'yxatdagi qadalgan xabarlar soni",
         "hint": "",
-        "text": "5 tagacha  yoki + 5 ta maxfiy chat"
+        "text": "5 tagacha chat yoki kanallar + 5 ta maxfiy chatlar; Preimum foydalanuvchilarga - 10 tagacha chat yoki kanallar"
       },
       "group_name": {
         "name": "Guruh nomi va tavsifi",
@@ -93,29 +98,29 @@
         "text": "255 tagacha belgi"
       },
       "editing": {
-        "name": "Xabar tahrirlash",
+        "name": "Xabarni tahrirlash",
         "hint": "",
-        "text": "yuborilganidan keyin 48 soat ichida; Saqlangan va cheklash huquqiga ega bo'lgan administratorlar uchun cheksiz"
+        "text": "yuborilganidan so'ng 48 soat ichida; Saqlangan xabarlar va qadash huquqiga ega bo'lgan administratorlar uchun cheklanmagan"
       },
       "media_self_destruction": {
-        "name": "Fotosurat va video o'z-o'zini yo'q qilish",
+        "name": "Rasm va video o'z-o'zini yo'q qilish",
         "hint": "",
-        "text": "1dan 60 sekundgacha"
+        "text": "1 dan 60 sekundgacha"
       },
       "recent_actions": {
         "name": "So'nggi amallar",
         "hint": "(obunalar, xabarlar, va boshqalar)",
-        "text": "oxirgi ikki kun"
+        "text": "so'nggi ikki kun"
       },
       "mentions_amount": {
-        "name": "Eslatmalar soni",
-        "hint": "Bir xabarda",
-        "text": "50 tagacha, aks holda bildirishnomalar yuborilmaydi"
+        "name": "Eslab o'tishlar soni",
+        "hint": "bir xabarda",
+        "text": "50 tagacha, dastlabki 5 tasiga bildirishnoma boradi"
       },
       "visible_messages": {
         "name": "Ko'rinadigan xabarlar soni",
-        "hint": "guruhlarda",
-        "text": "1,000,000 tagacha xabar"
+        "hint": "guruhda",
+        "text": "1 000 000 so'nggi xabar"
       },
       "pinned_messages_number": {
         "name": "Qadalgan xabarlar soni",
@@ -123,22 +128,22 @@
         "text": "cheklanmagan"
       },
       "participants_to_see_stats": {
-        "name": "Statistikani ko'rish uchun eng kam a'zolar soni(guruh yoki kanalda eng kamida shuncha a'zo bo'lsagina siz statistikani ko'ra olasiz)",
+        "name": "Statistikani ko'rish uchun a'zolar soni",
         "hint": "",
         "text": "kamida 500"
       },
       "username_reservation": {
-        "name": "O'zgartirilgandan keyin @username zahirasi",
-        "hint": "(foydalanuvchi nomi faqat uning sobiq egasi uchun mavjud bo'lgan vaqt) ",
+        "name": "O'zgartirilgan foydalanuvchi nomini zahiralash muddati",
+        "hint": "(foydalanuvchi nomi faqat uning sobiq egasi uchun mavjud bo'ladigan vaqt)",
         "text": "tahminan 15-30 daqiqa"
       },
       "participants_for_group_stickers": {
-        "name": "Guruh asosiy stikerlari",
+        "name": "Guruh stikerlari",
         "hint": "",
-        "text": "100+ ishtirokchi bo'lgan guruhlar"
+        "text": "100+ ishtirokchilari bo'lgan guruhlar"
       },
       "chat_role_length": {
-        "name": "Admin nomining uzunligi",
+        "name": "Admin amali nomi uzunligi",
         "hint": "",
         "text": "16 tagacha belgi"
       },
@@ -150,15 +155,15 @@
       "broadcast_group_access": {
         "name": "Super guruhni Translyatsiya guruhiga aylantirish",
         "hint": "",
-        "text": "199,000 tadan yuqori a'zolar"
+        "text": "199 000 ta va undan ko'p a'zoli chatlar uchun"
       },
       "read_receipts_availability": {
-        "name": "Chatda o'qish ruhsatnomasi",
+        "name": "Chatlarda o'qilganlik haqida hisobotlar",
         "hint": "",
-        "text": "100 yoki undan kam a'zolar bilan suhbatlar uchun foydalanuvchilar ro'yxati faqat xabarni yuborgan foydalanuvchi uchun mavjud"
+        "text": "100 yoki undan kam a'zolari bor chatlar uchun, o'qigan foydalanuvchilar ro'yxati faqat xabarni yuborgan foydalanuvchigagina ko'rinadi"
       },
       "read_receipts_lifetime": {
-        "name": "Chatda o'qish ruhsatnomasi vaqti",
+        "name": "O'qilganlik haqida hisobotning mavjudlik vaqti",
         "hint": "",
         "text": "xabar yuborilgan kundan boshlab 7 kungacha"
       }
@@ -168,24 +173,24 @@
     "name": "Ovozli va Video chatlar",
     "items": {
       "voice_chat_participants": {
-        "name": "Ovozli chat qatnashuvchilari",
+        "name": "Ovozli chat eshituvchilari",
         "hint": "",
         "text": "cheklanmagan"
       },
       "video_chat_broadcast": {
         "name": "Video translyatsiya",
-        "hint": "(kamera, ekranga chiqarish)",
-        "text": "bir vaqtning o'zida 30 ta translyatsiya a'zosi"
+        "hint": "(kamera, ekranni ko'rsatish)",
+        "text": "bir vaqtning o'zida 30 tagacha translyatsiya qilayotgan foydalanuvchilar"
       },
       "video_chat_viewers": {
         "name": "Video translyatsiya kuzatuvchilari",
         "hint": "",
-        "text": "Rasmiy ravishda cheksiz deb aytilgan, amalda oqim bir vaqtning o'zida 2000 ga yaqin tomoshabinlarda beqaror bo'lib qoladi."
+        "text": "rasman cheksiz deb aytilgan, amalda tomoshabinlar soni bir vaqtning o'zida 2000 ga yaqin bo'lganda oqim beqaror bo'lib qoladi"
       },
       "voice_chat_schedule": {
         "name": "Rejalashtirilgan suhbatlar",
         "hint": "",
-        "text": "7 kungacha"
+        "text": "keyingi 7 kungacha"
       }
     }
   },
@@ -193,14 +198,14 @@
     "name": "Kanallar",
     "items": {
       "public_usernames": {
-        "name": "Ommaviy havolalar soni",
+        "name": "Ommaviy foydalanuvchi nomlari soni",
         "hint": "bitta hisob raqam uchun",
-        "text": "10 tagacha (guruhlar ham)"
+        "text": "10 tagacha (guruhlar bilan)"
       },
       "username_length": {
-        "name": "@username uzunligi",
+        "name": "@foydalanuvchinomi uzunligi",
         "hint": "",
-        "text": "5 dan 32 tagacha"
+        "text": "5 dan 32 tagacha belgi"
       },
       "channel_name": {
         "name": "Kanal nomi va tavsifi",
@@ -213,7 +218,7 @@
         "text": "50 tagacha hisob raqamlar"
       },
       "editing": {
-        "name": "Xabar tahrirlash",
+        "name": "Postlarni tahrirlash",
         "hint": "",
         "text": "cheklanmagan (agar kanalga muhokama uchun guruh ulangan bo'lsa, 2 hafta muddatdan ortiqroq postlar chatda yangilanmaydi)"
       },
@@ -224,18 +229,18 @@
       },
       "visible_participants": {
         "name": "Ko'rinadigan a'zolar",
-        "hint": "kanal administratorlari uchun",
+        "hint": "kanal administratori uchun",
         "text": "200 ta odam"
       },
       "channel_deletion": {
-        "name": "O'chirilgan kanal",
+        "name": "Kanalni o'chirish",
         "hint": "",
         "text": "1K dan ortiq obunachiga ega kanallarni faqat Telegram ko'magi yordamida o'chirish mumkin"
       },
       "private_channel_access": {
-        "name": "Yopiq kanallarni a'zo bo'lmasdan kirib ko'rish",
+        "name": "Yopiq kanallarni a'zo bo'lmasdan ko'rish",
         "hint": "(200 dan ortiq a'zo bo'lgan kanallar uchun)",
-        "text": "Kuniga 5 daqiqagacha"
+        "text": "kuniga 5 daqiqagacha"
       },
       "invintations": {
         "name": "A'zo qo'shish",
@@ -248,7 +253,7 @@
         "text": "kamida 50"
       },
       "username_reservation": {
-        "name": "O'zgarishdan keyin @username zahirasi",
+        "name": "O'zgarishdan keyin @foydalanuvchinomi ni zahiralab turish",
         "hint": "(foydalanuvchi nomi faqat uning sobiq egasi uchun mavjud bo'lgan vaqt)",
         "text": "tahminan 15-30 daqiqa"
       }
@@ -265,17 +270,17 @@
       "media_descriptions": {
         "name": "Medialar uchun izoh",
         "hint": "",
-        "text": "1,024 tagacha belgi "
+        "text": "1024 ta belgigacha; Premium foydalanuvchilar uchun - 2048 ta belgigacha"
       },
       "upload_size": {
-        "name": "Fayl hajmi chegarasi",
+        "name": "Fayl o'lchamiga chegara",
         "hint": "",
-        "text": "2.0 GB gacha"
+        "text": "2 GB gacha; Premium foydalanuvchilar uchun - 4 GB gacha"
       },
       "file_name_length": {
         "name": "Fayl nomi uzunligi",
         "hint": "",
-        "text": "60 ta belgigacha, qolganlari qisqartiriladi"
+        "text": "60 ta belgigacha, oshiqchasi qisqartiriladi"
       },
       "video_message_duration": {
         "name": "Video xabarning davomiyligi",
@@ -283,14 +288,14 @@
         "text": "1 daqiqagacha"
       },
       "album_size": {
-        "name": "Rasmlar va videolar bitta pleylistda",
+        "name": "Rasmlar va videolar bitta xabarda",
         "hint": "(albom)",
-        "text": "10 tagacha "
+        "text": "10 tagacha"
       },
       "delayed_messages": {
-        "name": "Rejalashtirilgan xabarlarning davomiyligi",
+        "name": "Rejalashtirilgan xabarlarning miqdori",
         "hint": "",
-        "text": "100 tagacha"
+        "text": "100 ta element (har bir chat uchun)"
       },
       "delaying_messages": {
         "name": "Jadval oralig'i",
@@ -305,12 +310,12 @@
       "folder_amount": {
         "name": "Jildlar miqdori",
         "hint": "",
-        "text": "10 tagacha"
+        "text": ""
       },
       "pinned_chats_in_folder": {
         "name": "Jilddagi qadalgan xabarlar ",
         "hint": "",
-        "text": "100 tagacha"
+        "text": "100 ta chat; Premium foydalanuvchilar uchun - 200 ta chat"
       }
     }
   },
@@ -359,18 +364,23 @@
       },
       "upload_limit_botapi": {
         "name": "Fayllarni yuklash chegarasi",
-        "hint": "(BotAPI)",
+        "hint": "local Bot APi serverisiz",
         "text": "50 MB gacha"
+      },
+      "upload_limit_botapi_local": {
+        "name": "Fayllarni telegramga yuklash chegarasi",
+        "hint": "local Bot API serveri bilan",
+        "text": "2000 MB gacha"
       },
       "download_limit_botapi": {
         "name": "Fayllarni yuklab olish chegarasi",
-        "hint": "(BotAPI)",
+        "hint": "local Bot API serverisiz",
         "text": "20 MB gacha"
       },
-      "forwarding": {
-        "name": "Xabar uzatishlar",
-        "hint": "",
-        "text": "Soatiga 2,000 gacha"
+      "download_limit_botapi_local": {
+        "name": "Fayllarni yuklab olish chegarasi",
+        "hint": "local Bot API serveri bilan",
+        "text": "2000 MB gacha"
       },
       "keys_in_keyboard_number": {
         "name": "Tugmachalar soni",
@@ -378,8 +388,8 @@
         "text": "100 tagacha"
       },
       "formatting_data": {
-        "name": "Xabarni formatlash ma'lumotlari",
-        "hint": "",
+        "name": "Xabar markup ma'lumotlari",
+        "hint": "masalan. inline tugmalar",
         "text": "10 KB gacha"
       },
       "formatting_entities": {
@@ -387,15 +397,20 @@
         "hint": "(qalin, kursiv va boshqalar)",
         "text": "100 tagacha"
       },
-      "messaging_frequency": {
-        "name": "Xabarlar chastotasi",
-        "hint": "(BotSupport tomonidan ko'tarilishi mumkin)",
-        "text": "soniyada 30 tagacha, ommaviy suhbat va kanallarda daqiqasiga 20 tagacha"
+      "messaging_frequency_broadcast": {
+        "name": "Xabarlarni uzatish chastotasi",
+        "hint": "faqat boshqa nofaol chatlarga bildirishnomalar yuborilganda amal qiladi",
+        "text": "chatlarda soniyasiga 30 tagacha xabar"
       },
-      "api_requests_frequency": {
-        "name": "API chastota haqida savol",
-        "hint": "(BotSupport tomonidan ko'tarilishi mumkin)",
-        "text": "Soniyada 30 ta so'rov"
+      "messaging_frequency": {
+        "name": "Xabarlarni uzatish chastotasi",
+        "hint": "har qanday chatda",
+        "text": "sekundiga taxminan bir xabargacha, qisqa xabarlar bundan mustasno"
+      },
+      "messaging_frequency_groups": {
+        "name": "Xabarlarni uzatish chastotasi",
+        "hint": "guruhlarda",
+        "text": "bir chatda soniyasiga 20 tagacha xabar"
       },
       "bot_commands_count": {
         "name": "Buyruqlar soni",
@@ -410,11 +425,11 @@
       "bot_command_description_length": {
         "name": "Buyruq tavsifi uzunligi",
         "hint": "",
-        "text": "minimal: BotFatherda 2 ta belgi, Bot API da 3 ta belgi; maksimal: ikkalasida ham 256 ta belgi"
+        "text": "256 tagacha belgi, Bot API orqali o'rnatilganda bo'sh bo'lmasligi kerak"
       },
       "start_payload_size": {
         "name": "Bot/buyruqlari uzunligi",
-        "hint": "",
+        "hint": "deep linking uchun qo‘llaniladi",
         "text": "64 tagacha belgi"
       },
       "bot_alert_length": {
@@ -422,30 +437,30 @@
         "hint": "",
         "text": "200 tagacha belgi"
       },
-      "username_resolve_limit": {
-        "name": "Foydalanuvchi nomining chegarasi",
-        "hint": "(Ikkala bot va foydalanuvchi akkauntlari uchun)",
-        "text": "kuniga 200 tagacha foydalanuvchi nomi"
-      },
       "inline_max_items": {
         "name": "Inline natijalar soni",
         "hint": "",
-        "text": "50 tagacha "
+        "text": "har bir sahifaga 50 tagacha element"
       }
     }
   },
   "search": {
-    "name": " Qidiruv",
+    "name": "Qidiruv",
     "items": {
       "global_search": {
         "name": "Global qidiruv natijalari",
         "hint": "",
-        "text": "10 tagacha; Android uchun 3 tagacha"
+        "text": ""
       },
       "global_search_min_query": {
         "name": "So'rovlarning minimal uzunligi",
         "hint": "global qidiruv uchun",
         "text": "kamida 4 ta belgi"
+      },
+      "username_resolve_limit": {
+        "name": "Foydalanuvchi nomini topish chegarasi",
+        "hint": "(botlar va foydalanuvchi hisoblari uchun)",
+        "text": "kuniga 200 tagacha foydalanuvchi nomi"
       }
     }
   },
@@ -455,12 +470,12 @@
       "added_packs": {
         "name": "Qo'shilgan stikerlar soni",
         "hint": "",
-        "text": "200 tagacha "
+        "text": "200 tagacha"
       },
       "favorite_stickers": {
         "name": "Tanlangan stikerlar soni",
         "hint": "",
-        "text": "5 tagacha "
+        "text": "5 ta element; Premium foydalanuvchilar uchun - 10 ta elementgacha"
       },
       "pack_size": {
         "name": "Stiker To'plamlar miqdori",
@@ -480,7 +495,7 @@
       "file_size": {
         "name": "Stiker hajmi",
         "hint": "",
-        "text": "512 KB gacha oddiy; 64 KB gacha animatsion "
+        "text": "512 KB gacha oddiy; 64 KB gacha animatsion"
       },
       "fps": {
         "name": "FPS",
@@ -521,6 +536,11 @@
         "name": "Video avatar xususiyatlari",
         "hint": "",
         "text": "800x800 px, 2 MB gacha"
+      },
+      "photo_resolution": {
+        "name": "Rasm rezolyutsiyasi",
+        "hint": "siqilish bilan yuborilganda",
+        "text": "har bir tomon 1280px dan kam yoki teng boʻlishi kerak, aks holda u kichraytiriladi, shuning uchun eng katta tomoni 1280px boʻladi"
       }
     }
   }

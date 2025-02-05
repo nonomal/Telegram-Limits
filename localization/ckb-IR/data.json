@@ -5,12 +5,13 @@
       "username": {
         "name": "ناوی بەکارهێنەر",
         "hint": "(بۆ نموونە: @cameraman)",
-        "text": "5 بۆ 32 کاراکتەر"
+        "text": "5 to 32 characters, starting from 4 characters for NFT usernames"
       },
       "bio": {
         "name": "ژیاننامە",
         "hint": "",
-        "text": "تا 70 کاراکتەر ڕێپێدراوە"
+        "text": "up to 70 characters",
+        "text_premium": "up to 140 characters"
       },
       "name_length": {
         "name": "درێژیی ناوی یەکەم",
@@ -20,32 +21,30 @@
       "last_name_length": {
         "name": "درێژیی ناوی کۆتایی",
         "hint": "",
-        "text": "0 بۆ 64 کاراکتەر"
+        "text": "0 بۆ 64 نووسە"
       },
       "self_destruction": {
         "name": "ماوەی سڕینەوەی خۆکارانە",
         "hint": "ئەگەر هیچ چالاکییەک نەبوو",
-        "text": "1، 3، 6 و 12 مانگ (بنەڕەت: 6)"
+        "text": "1, 3, 6, 12, 18, 24 (12 by default)"
       },
       "spam_ban": {
         "name": "قەدەغەکردن لەبەر سپام",
         "hint": "",
-        "text": "3 ڕۆژ یان زیاتر"
+        "text": "لە یەک ڕۆژەوە بۆ هەتاهەتایە",
+        "text_premium": "from 1 second up to forever"
       },
       "channels_and_chats_number": {
         "name": "ژمارەی کەناڵ و گروپەکان",
         "hint": "کە دەتوانیت ببیت بە ئەندامیان",
-        "text": "تا 500 (بەوانەی خۆتەوە)"
-      },
-      "geochats_number": {
-        "name": "Geochats number",
-        "hint": "you can be member of",
-        "text": "up to 5 (including ones you own)"
+        "text": "up to 500 (including ones you own)",
+        "text_premium": "up to 1000 (including ones you own)"
       },
       "gifs_number": {
         "name": "ژمارەی گیفە پاشەکەوتکراوەکان",
         "hint": "",
-        "text": "تا 200"
+        "text": "up to 200",
+        "text_premium": "up to 400"
       },
       "video_length": {
         "name": "درێژیی وێنۆچکەی ڤیدیۆیی",
@@ -60,7 +59,13 @@
       "accounts_number": {
         "name": "ژمارەی هەژمارەکان",
         "hint": "(بەرنامە فەرمییەکان)",
-        "text": "تا 3"
+        "text": "up to 3",
+        "text_premium": "up to 4-6 (depends on app)"
+      },
+      "visible_messages": {
+        "name": "Visible messages number",
+        "hint": "(shared limit between private chats, bots and legacy groups)",
+        "text": "unlimited; before 2018 year - up to 1,000,000 visible messages: see https://twitter.com/telegram/status/1060910769410371584"
       }
     }
   },
@@ -85,12 +90,12 @@
       "pinned_number": {
         "name": "وتووێژە دەرزیلەکرواەکان لە لیستی سەرەکی",
         "hint": "",
-        "text": "تا 5 وتووێژ و کەناڵ + 5 وتووێژی نهێنی"
+        "text": "up to 5 chats or channels + 5 secret chats; for Premium users - up to 10 chats or channels"
       },
       "group_name": {
         "name": "ناوی گروپ و دەربارە",
         "hint": "",
-        "text": "تا 255 کاراکتەر"
+        "text": "تا 255 نووسە"
       },
       "editing": {
         "name": "دەستکاریکردنی پەیام",
@@ -123,9 +128,9 @@
         "text": "بێ سنوور"
       },
       "participants_to_see_stats": {
-        "name": "ژمارەی بەشداربووان بۆ توانای بینینی ئامارەکان",
+        "name": "Number of members to see statistics",
         "hint": "",
-        "text": "لانیکەم 500"
+        "text": "at least 500"
       },
       "username_reservation": {
         "name": "پاشپارێزی گۆڕینی ناوی بەکارهێنەر",
@@ -140,12 +145,12 @@
       "chat_role_length": {
         "name": "درێژیی ڕۆڵی بەڕێوەبەر",
         "hint": "",
-        "text": "تا 16 کاراکتەر"
+        "text": "تا 16 نووسە"
       },
       "chat_title_length": {
         "name": "درێژیی ناونیشانی وتووێژ",
         "hint": "",
-        "text": "تا 128 کاراکتەر"
+        "text": "تا 128 نووسە"
       },
       "broadcast_group_access": {
         "name": "گۆڕینی گروپ بۆ گروپی پەخشکردن",
@@ -153,19 +158,19 @@
         "text": "بۆ ئەو گروپانەی کە 199,000 ئەندام زیاتریان هەیە"
       },
       "read_receipts_availability": {
-        "name": "Read receipts availability",
+        "name": "دەرکەوتنی ئەو کەسانەی پەیامێکیان خوێندووەتەوە",
         "hint": "",
-        "text": "for chats with 100 members or less, the list of users is only available for the user who sent the message"
+        "text": "بۆ ئەو وتووێژانەی کە 100 ئەندام یان کەمتریان هەیە، تەنیا بۆ خاوەنی پەیامەکەش دیارە"
       },
       "read_receipts_lifetime": {
-        "name": "Read receipts lifetime",
+        "name": "توانای بینینی ئەو کەسانەی پەیامێکیان بینیوە",
         "hint": "",
-        "text": "up to 7 days since message was sent"
+        "text": "تا 7 ڕۆژ دوای ناردنی پەیامەکە"
       }
     }
   },
   "voice_chats": {
-    "name": "Voice & Video Chats",
+    "name": "وتووێژی دەنگی و ڤیدیۆیی",
     "items": {
       "voice_chat_participants": {
         "name": "گوێگرانی پەیوەندیی دەنگی",
@@ -180,7 +185,7 @@
       "video_chat_viewers": {
         "name": "بینەرانی ڤیدیۆ",
         "hint": "",
-        "text": "officially it's stated to be unlimited, in practice, the stream becomes unstable at about 2,000 simultaneous viewers"
+        "text": "تەلەگرام وتوویەتی سنووری نییە، بەڵام بە کرداری، جێگیر نامێنێت کاتێک زیاتر لە 2,000 بینەر دەبێت"
       },
       "voice_chat_schedule": {
         "name": "پەیامی بەرنامەبۆداڕێژراو",
@@ -200,12 +205,12 @@
       "username_length": {
         "name": "درێژیی @username",
         "hint": "",
-        "text": "5 بۆ 32 کاراکتەر"
+        "text": "5 بۆ 32 نووسە"
       },
       "channel_name": {
         "name": "ناوی کەناڵ و دەربارە",
         "hint": "",
-        "text": "تا 255 کاراکتەر"
+        "text": "تا 255 نووسە"
       },
       "channel_admins": {
         "name": "ژمارەی سەرپەرشتیارەکانی کەناڵ",
@@ -215,7 +220,7 @@
       "editing": {
         "name": "دەستکاریکردنی پۆستەکان",
         "hint": "",
-        "text": "بێسنوور (ئەگەر کەناڵەکە گروپێکی گفتوگۆی لینککراوی هەیە، ئەو بابەتانەی کە لە 2 هەفتە زیاترە لە چاتنوێکردنەوە دا نوێ ناکرێتەوە)"
+        "text": "بێسنوور (پۆستی کۆنتر لە 2 هەفتە نوێ نابێتەوە لەناو گروپی گفتوگۆی کەناڵەکە، ئەگەر هەیبێت)"
       },
       "subscribers": {
         "name": "ژمارەی بەشداربووانی کەناڵ",
@@ -260,22 +265,22 @@
       "single_message_length": {
         "name": "درێژیی یەک پەیام",
         "hint": "",
-        "text": "تا 4,096 کاراکتەر"
+        "text": "تا 4,096 نووسە"
       },
       "media_descriptions": {
         "name": "ژێرنووسی ڕەنگاڵەکان",
         "hint": "",
-        "text": "تا 1,024 کاراکتەر"
+        "text": "up to 1024 characters; for Premium users - up to 2048 characters"
       },
       "upload_size": {
         "name": "سنووری قەبارەی پەڕگە",
         "hint": "",
-        "text": "تا 2.0 گێگابایت"
+        "text": "up to 2 GB; for Premium users - up to 4 GB"
       },
       "file_name_length": {
-        "name": "File name length",
+        "name": "درێژیی ناوی فایل",
         "hint": "",
-        "text": "up to 60 characters, others will be trimmed out"
+        "text": "تا 60 نووسە، درێژتر بێت کورت دەکرێنەوە"
       },
       "video_message_duration": {
         "name": "ماوەی پەیامی ڤیدیۆیی",
@@ -290,7 +295,7 @@
       "delayed_messages": {
         "name": "ژمارەی پەیامە بەرنامەڕێژکراوەکان",
         "hint": "",
-        "text": "تا 100 دانە"
+        "text": "up to 100 items (per each chat)"
       },
       "delaying_messages": {
         "name": "ماوەی پەیامە بەرنامە بۆداڕێژراوەکان",
@@ -305,12 +310,12 @@
       "folder_amount": {
         "name": "ژمارەی بوخچەکان",
         "hint": "",
-        "text": "تا 10 بوخچە"
+        "text": "up to 10 folders; for Premium users - up to 30 folders"
       },
       "pinned_chats_in_folder": {
         "name": "وتووێژە دەرزیلەکرواەکان لە بوخچەیەک",
         "hint": "",
-        "text": "تا 100 وتووێژ"
+        "text": "up to 100 chats; for Premium users - up to 200 chats"
       }
     }
   },
@@ -345,32 +350,37 @@
       "username length": {
         "name": "درێژیی @username",
         "hint": "بۆ بۆتەکان",
-        "text": "5 بۆ 32 کاراکتەر"
+        "text": "5 بۆ 32 نووسە"
       },
       "info_length": {
         "name": "درێژی زانیاریی بۆت",
         "hint": "(/setabouttext)",
-        "text": "تا 120 کاراکتەر"
+        "text": "تا 120 نووسە"
       },
       "description_length": {
         "name": "درێژیی دەربارەی بۆت",
         "hint": "",
-        "text": "تا 512 کاراکتەر"
+        "text": "تا 512 نووسە"
       },
       "upload_limit_botapi": {
         "name": "سنووری بەرزکردنەوەی پەڕگه",
-        "hint": "(BotAPI)",
+        "hint": "بەبێ ڕاژەی Bot APIـی ناوخۆیی",
         "text": "تا 50 مێگابایت"
+      },
+      "upload_limit_botapi_local": {
+        "name": "سنووری بەرزکردنەوەی پەڕگه",
+        "hint": "بە ڕاژەی Bot APIـی ناوخۆیی",
+        "text": "تا 2000 مێگابایت"
       },
       "download_limit_botapi": {
         "name": "سنووری داگرتنی پەڕگە",
-        "hint": "(BotAPI)",
+        "hint": "بەبێ ڕاژەی Bot APIـی ناوخۆیی",
         "text": "تا 20 مێگابایت"
       },
-      "forwarding": {
-        "name": "گواستنەوەی پەیام",
-        "hint": "",
-        "text": "تا 2,000 دانە لە کاتژمێرێکدا"
+      "download_limit_botapi_local": {
+        "name": "سنووری داگرتنی پەڕگە",
+        "hint": "بە ڕاژەی Bot APIـی ناوخۆیی",
+        "text": "تا 2000 مێگابایت"
       },
       "keys_in_keyboard_number": {
         "name": "ژمارەی دوگمەکانی تەختەکلیل",
@@ -378,8 +388,8 @@
         "text": "تا 100 دانە"
       },
       "formatting_data": {
-        "name": "زانیاریی ڕازاندنەوەی پەیام",
-        "hint": "",
+        "name": "Message markup data",
+        "hint": "بۆ نموونە دوگمەی ئینڵاین",
         "text": "تا 10 کیلۆبایت"
       },
       "formatting_entities": {
@@ -387,15 +397,20 @@
         "hint": "(تۆخ، نووسین بەسەر یەکەوە هتد)",
         "text": "تا 100 دانە"
       },
-      "messaging_frequency": {
-        "name": "دووبارەبوونەوەی پەیامەکان",
-        "hint": "(دەتوانرێت لەلایەن BotSupport بەرزبکرێتەوە)",
-        "text": "تا 30 پەیام لە چرکەیەکدا؛ 20 لە چرکەیەکدا بۆ وتووێژە گشتییەکان و کەناڵەکان"
+      "messaging_frequency_broadcast": {
+        "name": "فراوانیی پەخشکردنی پەیام",
+        "hint": "تەنیا کاتێک چالاکانە ئاگادارکردنەوە دەنێردرێت بۆ وتووێژە ناچالاکەکان",
+        "text": "تا 30 پەیام لە چرکەیەکدا لە هەموو وتووێژەکان"
       },
-      "api_requests_frequency": {
-        "name": "دووبارەبوونەوەی داواکاریی API",
-        "hint": "(دەتوانرێت لەلایەن BotSupport بەرزبکرێتەوە)",
-        "text": "تا 30 داواکاری لە چرکەیەکدا"
+      "messaging_frequency": {
+        "name": "فراوانیی ناردنی پەیام",
+        "hint": "لە هەر وتووێژێک",
+        "text": "تا یەک پەیام لە چرکەیەکدا، بەبێ لەناکاوەکان"
+      },
+      "messaging_frequency_groups": {
+        "name": "فراوانیی ناردنی پەیام",
+        "hint": "لە گروپەکان",
+        "text": "تا 20 پەیام لە چرکەیەکدا لە هەر وتووێژێک"
       },
       "bot_commands_count": {
         "name": "ژمارەی فەرمانەکان",
@@ -410,27 +425,22 @@
       "bot_command_description_length": {
         "name": "درێژیی پێناسەی فەرمان",
         "hint": "",
-        "text": "کەمترین: 2 سیمبۆل لە BotFather، 3 سیمبۆل لە Bot API؛ زۆرترین: 256 کاراکتەر لە هەردووکیان"
+        "text": "تا 256 نووسە، دەبێت بەتاڵ نەبێت کاتێک بە Bot API دادەنرێت"
       },
       "start_payload_size": {
         "name": "درێژی نووسینەکانی دوای /start لە بەستەرە قووڵەکان",
-        "hint": "",
-        "text": "تا 64 کاراکتەر"
+        "hint": "لە بەستەرە قووڵەکاندا بەکار دەهێنرێت",
+        "text": "تا 64 بایت"
       },
       "bot_alert_length": {
         "name": "درێژیی پەیامی وریاکەری بۆت",
         "hint": "",
         "text": "تا 200 کارەکتەر"
       },
-      "username_resolve_limit": {
-        "name": "ناوی بەکارهێنەر چارەسەر دەکات سنوور",
-        "hint": "(بۆ هەردوو بۆتەکان و هەژماری بەکارهێنەر)",
-        "text": "ڕۆژانە تا 200 ناوی بەکارهێنەر"
-      },
       "inline_max_items": {
         "name": "ژمارەی ئەنجامەکانی ئینڵاین",
         "hint": "",
-        "text": "تا 50 دانە"
+        "text": "تا 50 دانە لە هەر پەڕەیەکدا"
       }
     }
   },
@@ -440,12 +450,17 @@
       "global_search": {
         "name": "ئەنجامی گەڕانی جیهانی",
         "hint": "",
-        "text": "تا 10 دانە؛ تا 3 بۆ ئاندرۆید"
+        "text": ""
       },
       "global_search_min_query": {
         "name": "کەمترین درێژیی داوا",
         "hint": "بۆ گەڕانی جیهانی",
         "text": "لانیکەم 4 کاراکتەر"
+      },
+      "username_resolve_limit": {
+        "name": "Username resolve limit",
+        "hint": "(for both bots and user accounts)",
+        "text": "up to 200 usernames daily"
       }
     }
   },
@@ -460,7 +475,7 @@
       "favorite_stickers": {
         "name": "ژمارەی لەزگە دڵخوازەکان",
         "hint": "",
-        "text": "تا 5 دانە"
+        "text": "up to 5 items; for Premium users - up to 10 items"
       },
       "pack_size": {
         "name": "ژمارەی لەزگەکان لە یەک دەستەدا",
@@ -493,9 +508,9 @@
         "text": "تا 64 پیت"
       },
       "stickerpack_url_length": {
-        "name": "Pack /addstickers url length",
+        "name": "درێژیی بەستەری دەستەی لەزگە",
         "hint": "",
-        "text": "up to 62 characters"
+        "text": "تا 62 نووسە"
       }
     }
   },
@@ -521,6 +536,11 @@
         "name": "تایبەتمەندیی وێنۆچکەی ڤیدیۆیی",
         "hint": "",
         "text": "800 بە 800 پیکسڵ، تا 2 مێگابایت"
+      },
+      "photo_resolution": {
+        "name": "قەبارەی وێنە",
+        "hint": "کاتێک بە بچووککردنەوەوە دەنێردرێت",
+        "text": "هەر لایەک دەبێت 1280 پیکسڵ یان کەمتر بێت، ئەگەر واش نەبێت بچووک دەکرێتەوە بۆ ئەوەی گەورەترین لای ببێت بە 1280"
       }
     }
   }

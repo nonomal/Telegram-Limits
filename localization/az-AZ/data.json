@@ -5,12 +5,13 @@
       "username": {
         "name": "İstifadəçi adı",
         "hint": "(məsələn: @cameraman)",
-        "text": "5-32 arası simvol"
+        "text": "5 to 32 characters, starting from 4 characters for NFT usernames"
       },
       "bio": {
         "name": "Bioqrafiya",
         "hint": "",
-        "text": "70 simvola qədər"
+        "text": "up to 70 characters",
+        "text_premium": "up to 140 characters"
       },
       "name_length": {
         "name": "Ad uzunluğu",
@@ -25,27 +26,25 @@
       "self_destruction": {
         "name": "Özünü yox edən dövr",
         "hint": "fəaliyyət yoxdursa",
-        "text": "1, 3, 6 və ya 12 ay (ilkin olaraq 6)"
+        "text": "1, 3, 6, 12, 18, 24 (12 by default)"
       },
       "spam_ban": {
         "name": "Spam əngəli",
         "hint": "",
-        "text": "3 gün və daha çox"
+        "text": "from 1 day up to forever",
+        "text_premium": "from 1 second up to forever"
       },
       "channels_and_chats_number": {
         "name": "Kanal və super qrup sayı",
         "hint": "üzv ola bilərsiniz",
-        "text": "500-ə qədər (özünüzünkülər daxil olmaqla)"
-      },
-      "geochats_number": {
-        "name": "Geosöhbətlərin sayı",
-        "hint": "üzv ola bilərsiniz",
-        "text": "5-ə qədər (özünü daxil olmaqla)"
+        "text": "up to 500 (including ones you own)",
+        "text_premium": "up to 1000 (including ones you own)"
       },
       "gifs_number": {
         "name": "Saxlanılmış GIF sayı",
         "hint": "",
-        "text": "200-ə qədər"
+        "text": "up to 200",
+        "text_premium": "up to 400"
       },
       "video_length": {
         "name": "Video avatar müddəti",
@@ -60,7 +59,13 @@
       "accounts_number": {
         "name": "Hesab sayı",
         "hint": "(rəsmi müştərilər)",
-        "text": "3-ə qədər"
+        "text": "up to 3",
+        "text_premium": "up to 4-6 (depends on app)"
+      },
+      "visible_messages": {
+        "name": "Visible messages number",
+        "hint": "(shared limit between private chats, bots and legacy groups)",
+        "text": "unlimited; before 2018 year - up to 1,000,000 visible messages: see https://twitter.com/telegram/status/1060910769410371584"
       }
     }
   },
@@ -85,7 +90,7 @@
       "pinned_number": {
         "name": "Əsas siyahıda sancaqlanmış söhbətlər",
         "hint": "",
-        "text": "5 söhbət və ya kanala qədər + 5 gizli söhbət"
+        "text": "up to 5 chats or channels + 5 secret chats; for Premium users - up to 10 chats or channels"
       },
       "group_name": {
         "name": "Qrup adı və açıqlaması",
@@ -123,9 +128,9 @@
         "text": "limitsiz"
       },
       "participants_to_see_stats": {
-        "name": "Statistikaya baxmaq üçün iştirakçı sayı",
+        "name": "Number of members to see statistics",
         "hint": "",
-        "text": "ən azı 500"
+        "text": "at least 500"
       },
       "username_reservation": {
         "name": "İstifadəçi adı dəyişmə rezervasiyası",
@@ -265,12 +270,12 @@
       "media_descriptions": {
         "name": "Media açıqlaması",
         "hint": "",
-        "text": "1,024 simvola qədər"
+        "text": "up to 1024 characters; for Premium users - up to 2048 characters"
       },
       "upload_size": {
         "name": "Fayl həcm limiti",
         "hint": "",
-        "text": "2.0 GB-a qədər"
+        "text": "up to 2 GB; for Premium users - up to 4 GB"
       },
       "file_name_length": {
         "name": "Fayl adı uzunluğu",
@@ -290,7 +295,7 @@
       "delayed_messages": {
         "name": "Planlaşdırılmış mesaj sayı",
         "hint": "",
-        "text": "100 elementə qədər"
+        "text": "up to 100 items (per each chat)"
       },
       "delaying_messages": {
         "name": "Planlaşdırma aralığı",
@@ -305,12 +310,12 @@
       "folder_amount": {
         "name": "Qovluq miqdarı",
         "hint": "",
-        "text": "10-a qədər"
+        "text": "up to 10 folders; for Premium users - up to 30 folders"
       },
       "pinned_chats_in_folder": {
         "name": "Qovluqda sancaqlanmış söhbətlər",
         "hint": "",
-        "text": "100 söhbətə qədər"
+        "text": "up to 100 chats; for Premium users - up to 200 chats"
       }
     }
   },
@@ -359,18 +364,23 @@
       },
       "upload_limit_botapi": {
         "name": "Fayl yükləmə limiti",
-        "hint": "(BotAPI)",
+        "hint": "without local Bot API server",
         "text": "50 MB-a qədər"
+      },
+      "upload_limit_botapi_local": {
+        "name": "File upload limit",
+        "hint": "with local Bot API server",
+        "text": "up to 2000 MB"
       },
       "download_limit_botapi": {
         "name": "Fay endirmə limiti",
-        "hint": "(BotAPI)",
+        "hint": "without local Bot API server",
         "text": "20 MB-a qədər"
       },
-      "forwarding": {
-        "name": "Mesaj yönləndirmə",
-        "hint": "",
-        "text": "saatda 2000-ə qədər"
+      "download_limit_botapi_local": {
+        "name": "File download limit",
+        "hint": "with local Bot API server",
+        "text": "up to 2000 MB"
       },
       "keys_in_keyboard_number": {
         "name": "Klaviaturadakı düymə sayı",
@@ -378,8 +388,8 @@
         "text": "100-ə qədər"
       },
       "formatting_data": {
-        "name": "Mesaj format etmə verilənləri",
-        "hint": "",
+        "name": "Message markup data",
+        "hint": "e.g. inline buttons",
         "text": "10 KB-a qədər"
       },
       "formatting_entities": {
@@ -387,15 +397,20 @@
         "hint": "(qalın, meyilli və s.)",
         "text": "100-ə qədər"
       },
-      "messaging_frequency": {
-        "name": "Mesaj tezliyi",
-        "hint": "(BotSupport tərəfindən artırıla bilər)",
-        "text": "saniyədə 30 mesaja qədər; ictimai söhbətlər və kanallar üçün dəqiqədə 20 mesaja qədər"
+      "messaging_frequency_broadcast": {
+        "name": "Message broadcasting frequency",
+        "hint": "only applies when actively sending notifications to otherwise inactive chats",
+        "text": "up to 30 messages per second across chats"
       },
-      "api_requests_frequency": {
-        "name": "API tələblərinin tezliyi",
-        "hint": "(BotSupport tərəfindən artırıla bilər)",
-        "text": "saniyədə 30 tələbə qədər"
+      "messaging_frequency": {
+        "name": "Message sending frequency",
+        "hint": "in any chat",
+        "text": "up to roughly one message per second, except maybe short bursts"
+      },
+      "messaging_frequency_groups": {
+        "name": "Message sending frequency",
+        "hint": "in group chats",
+        "text": "up to 20 messages per second in the same chat"
       },
       "bot_commands_count": {
         "name": "Əmr sayı",
@@ -410,27 +425,22 @@
       "bot_command_description_length": {
         "name": "Əmr açıqlama uzunluğu",
         "hint": "",
-        "text": "minimum: BotFather-də 2 simvol, BotAPI-də 3 simvol; maksimum: hər ikisində 256 simvol"
+        "text": "up to 256 characters, must be non-empty when set via Bot API"
       },
       "start_payload_size": {
         "name": "Bot /start yüklə payload uzunluğu",
-        "hint": "",
-        "text": "64 simvola qədər"
+        "hint": "used in deep linking",
+        "text": "up to 64 bytes"
       },
       "bot_alert_length": {
         "name": "Bot xəbərdarlıq mesajının uzunluğu",
         "hint": "",
         "text": "200 simvola qədər"
       },
-      "username_resolve_limit": {
-        "name": "İstifadəçi adı həll limiti",
-        "hint": "(həm botlar, həm də istifadəçi hesabları üçün)",
-        "text": "gündəlik 200 istifadəçi adına qədər"
-      },
       "inline_max_items": {
         "name": "Sətir içi nəticə sayı",
         "hint": "",
-        "text": "50 elementə qədər"
+        "text": "up to 50 items per page"
       }
     }
   },
@@ -440,12 +450,17 @@
       "global_search": {
         "name": "Qlobal axtarış nəticələri",
         "hint": "",
-        "text": "10 elementə qədər; Android üçün 3-ə qədər"
+        "text": ""
       },
       "global_search_min_query": {
         "name": "Minimal sorğu uzunluğu",
         "hint": "qlobal axtarış üçün",
         "text": "ən azı 4 simvol"
+      },
+      "username_resolve_limit": {
+        "name": "Username resolve limit",
+        "hint": "(for both bots and user accounts)",
+        "text": "up to 200 usernames daily"
       }
     }
   },
@@ -460,7 +475,7 @@
       "favorite_stickers": {
         "name": "Sevimli stiker sayı",
         "hint": "",
-        "text": "5 elementə qədər"
+        "text": "up to 5 items; for Premium users - up to 10 items"
       },
       "pack_size": {
         "name": "Paketdəki stiker sayı",
@@ -521,6 +536,11 @@
         "name": "Video avatar xüsusiyyətləri",
         "hint": "",
         "text": "800x800px, 2 MB-a qədər"
+      },
+      "photo_resolution": {
+        "name": "Photo resolution",
+        "hint": "when sent with compression",
+        "text": "each side should be less or equal to 1280px, else it will be downscaled so the biggest side will be 1280px"
       }
     }
   }

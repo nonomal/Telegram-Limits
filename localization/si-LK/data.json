@@ -5,12 +5,13 @@
       "username": {
         "name": "පරිශීලක නාමය",
         "hint": "(උදා. @තිසර)",
-        "text": "අක්ෂර 5 සිට 32 ක් දක්වා"
+        "text": "5 to 32 characters, starting from 4 characters for NFT usernames"
       },
       "bio": {
         "name": "සටහන",
         "hint": "",
-        "text": "අක්ෂර 70 ක් දක්වා"
+        "text": "up to 70 characters",
+        "text_premium": "up to 140 characters"
       },
       "name_length": {
         "name": "මුල් නමේ දිග",
@@ -25,27 +26,25 @@
       "self_destruction": {
         "name": "ස්වයංක්‍රීයව මැකීමේ කාලසීමාව",
         "hint": "(අක්‍රියව සිටියොත්)",
-        "text": "මාස 1, 3, 6, සහ 12 (පෙරනිමි සැකසුම 6 ක්)"
+        "text": "1, 3, 6, 12, 18, 24 (12 by default)"
       },
       "spam_ban": {
         "name": "ස්පෑම් වාරණය",
         "hint": "",
-        "text": "දින 3 ක් හෝ වැඩි"
+        "text": "from 1 day up to forever",
+        "text_premium": "from 1 second up to forever"
       },
       "channels_and_chats_number": {
         "name": "නාලිකා හා සුපිරි සමූහ ගණන",
         "hint": "(ඔබට සාමාජිකයෙක් විය හැකි)",
-        "text": "500 ක් දක්වා (ඔබ හිමිකරු වන ඒවාද ඇතුළුව)"
-      },
-      "geochats_number": {
-        "name": "Geochats number",
-        "hint": "you can be member of",
-        "text": "up to 5 (including ones you own)"
+        "text": "up to 500 (including ones you own)",
+        "text_premium": "up to 1000 (including ones you own)"
       },
       "gifs_number": {
         "name": "සුරැකි GIF ගණන",
         "hint": "",
-        "text": "200 ක් දක්වා"
+        "text": "up to 200",
+        "text_premium": "up to 400"
       },
       "video_length": {
         "name": "පැතිකඩ වීඩියෝවක කාලසීමාව",
@@ -60,7 +59,13 @@
       "accounts_number": {
         "name": "ගිණුම් ගණන",
         "hint": "(නිල ටෙලිග්‍රෑම් යෙදුම්)",
-        "text": "3 ක් දක්වා"
+        "text": "up to 3",
+        "text_premium": "up to 4-6 (depends on app)"
+      },
+      "visible_messages": {
+        "name": "Visible messages number",
+        "hint": "(shared limit between private chats, bots and legacy groups)",
+        "text": "unlimited; before 2018 year - up to 1,000,000 visible messages: see https://twitter.com/telegram/status/1060910769410371584"
       }
     }
   },
@@ -85,7 +90,7 @@
       "pinned_number": {
         "name": "ප්‍රධාන ලැයිස්තුව තුළ ඇමුණූ සංවාද",
         "hint": "",
-        "text": "නාලිකා හෝ සංවාද 5 ක් දක්වා + රහස් සංවාද 5 ක්"
+        "text": "up to 5 chats or channels + 5 secret chats; for Premium users - up to 10 chats or channels"
       },
       "group_name": {
         "name": "සමූහයේ නම හා විස්තරය",
@@ -123,9 +128,9 @@
         "text": "අසීමිතයි"
       },
       "participants_to_see_stats": {
-        "name": "සංඛ්‍යාලේඛන දැකීම සඳහා අවශ්‍ය සාමාජිකයින් ගණන",
+        "name": "Number of members to see statistics",
         "hint": "",
-        "text": "අවම වශයෙන් 500 ක්"
+        "text": "at least 500"
       },
       "username_reservation": {
         "name": "වෙනස්කළ පරිශීලක නාමය වෙන්කිරීම",
@@ -265,12 +270,12 @@
       "media_descriptions": {
         "name": "ඡායාරූප සටහන",
         "hint": "",
-        "text": "අක්ෂර 1,024 ක් දක්වා"
+        "text": "up to 1024 characters; for Premium users - up to 2048 characters"
       },
       "upload_size": {
         "name": "ගොනුවක උපරිම විශාලත්වය",
         "hint": "",
-        "text": "ගිගා.බ 2.0 ක් දක්වා"
+        "text": "up to 2 GB; for Premium users - up to 4 GB"
       },
       "file_name_length": {
         "name": "File name length",
@@ -290,7 +295,7 @@
       "delayed_messages": {
         "name": "කල්තැබූ පණිවිඩ ගණන",
         "hint": "",
-        "text": "අයිතම 100 ක් දක්වා"
+        "text": "up to 100 items (per each chat)"
       },
       "delaying_messages": {
         "name": "කල්තැබිය හැකි කාලසීමාව",
@@ -305,12 +310,12 @@
       "folder_amount": {
         "name": "ෆෝල්ඩර ගණන",
         "hint": "",
-        "text": "ෆෝල්ඩර 10 ක් දක්වා"
+        "text": "up to 10 folders; for Premium users - up to 30 folders"
       },
       "pinned_chats_in_folder": {
         "name": "ෆෝල්ඩරයක් තුළ ඇමුණූ සංවාද",
         "hint": "",
-        "text": "සංවාද 100 ක් දක්වා"
+        "text": "up to 100 chats; for Premium users - up to 200 chats"
       }
     }
   },
@@ -359,18 +364,23 @@
       },
       "upload_limit_botapi": {
         "name": "ගොනු උඩුගතකිරීමේ සීමාව",
-        "hint": "(BotAPI)",
+        "hint": "without local Bot API server",
         "text": "මෙගා.බ 50 ක් දක්වා"
+      },
+      "upload_limit_botapi_local": {
+        "name": "File upload limit",
+        "hint": "with local Bot API server",
+        "text": "up to 2000 MB"
       },
       "download_limit_botapi": {
         "name": "ගොනු බාගතකිරීමේ සීමාව",
-        "hint": "(BotAPI)",
+        "hint": "without local Bot API server",
         "text": "මෙගා.බ 20 ක් දක්වා"
       },
-      "forwarding": {
-        "name": "පණිවිඩ පිටතට යැවීම",
-        "hint": "",
-        "text": "පැයකට 2,000 ක් දක්වා"
+      "download_limit_botapi_local": {
+        "name": "File download limit",
+        "hint": "with local Bot API server",
+        "text": "up to 2000 MB"
       },
       "keys_in_keyboard_number": {
         "name": "යතුරුපුවරු බොත්තම් ගණන",
@@ -378,8 +388,8 @@
         "text": "අයිතම 100 ක් දක්වා"
       },
       "formatting_data": {
-        "name": "පණිවිඩ හැඩසව් කිරීම් දත්ත",
-        "hint": "",
+        "name": "Message markup data",
+        "hint": "e.g. inline buttons",
         "text": "කිලෝ.බ 10 ක් දක්වා"
       },
       "formatting_entities": {
@@ -387,15 +397,20 @@
         "hint": "(bold, cursive etc.)",
         "text": "අයිතම 100 ක් දක්වා"
       },
-      "messaging_frequency": {
-        "name": "පණිවිඩ ප්‍රමාණය",
-        "hint": "(BotSupport හරහා වැඩිකළ හැකියි)",
-        "text": "තත්පරයට පණිවිඩ 30 ක් දක්වා; පොදු සංවාද හා නාලිකා තුළදී විනාඩියට 20 ක් දක්වා"
+      "messaging_frequency_broadcast": {
+        "name": "Message broadcasting frequency",
+        "hint": "only applies when actively sending notifications to otherwise inactive chats",
+        "text": "up to 30 messages per second across chats"
       },
-      "api_requests_frequency": {
-        "name": "API ඉල්ලීම් ප්‍රමාණය",
-        "hint": "(BotSupport හරහා වැඩිකළ හැකියි)",
-        "text": "තත්පරයට ඉල්ලීම් 30 ක් දක්වා"
+      "messaging_frequency": {
+        "name": "Message sending frequency",
+        "hint": "in any chat",
+        "text": "up to roughly one message per second, except maybe short bursts"
+      },
+      "messaging_frequency_groups": {
+        "name": "Message sending frequency",
+        "hint": "in group chats",
+        "text": "up to 20 messages per second in the same chat"
       },
       "bot_commands_count": {
         "name": "විධාන ගණන",
@@ -410,27 +425,22 @@
       "bot_command_description_length": {
         "name": "විධාන විස්තරයේ දිග",
         "hint": "",
-        "text": "minimum: 2 symbols in BotFather, 3 symbols in Bot API; maximum: 256 characters in both"
+        "text": "up to 256 characters, must be non-empty when set via Bot API"
       },
       "start_payload_size": {
         "name": "Bot /start payload length",
-        "hint": "",
-        "text": "අක්ෂර 64 ක් දක්වා"
+        "hint": "used in deep linking",
+        "text": "up to 64 bytes"
       },
       "bot_alert_length": {
         "name": "Bot alert message length",
         "hint": "",
         "text": "අක්ෂර 200 ක් දක්වා"
       },
-      "username_resolve_limit": {
-        "name": "Username resolve limit",
-        "hint": "(පරිශීලක ගිණුම් සහ ස්වයංක්‍රමලේඛ සඳහා)",
-        "text": "දිනකට පරිශීලක නාම 200ක් දක්වා"
-      },
       "inline_max_items": {
         "name": "Inline results number",
         "hint": "",
-        "text": "up to 50 items"
+        "text": "up to 50 items per page"
       }
     }
   },
@@ -440,12 +450,17 @@
       "global_search": {
         "name": "ගෝලීය සෙවුම් ප්‍රතිඵල",
         "hint": "",
-        "text": "අයිතම 10 ක් දක්වා; ඇන්ඩ්‍රොයිඩ් තුළදී 3 ක් දක්වා"
+        "text": ""
       },
       "global_search_min_query": {
         "name": "සෙවුම් පදයක අවම දිග",
         "hint": "(ගෝලීය සෙවුමකදී)",
         "text": "අවම වශයෙන් අක්ෂර 4 ක්"
+      },
+      "username_resolve_limit": {
+        "name": "Username resolve limit",
+        "hint": "(for both bots and user accounts)",
+        "text": "up to 200 usernames daily"
       }
     }
   },
@@ -460,7 +475,7 @@
       "favorite_stickers": {
         "name": "ප්‍රියතම ස්ටිකර් ගණන",
         "hint": "",
-        "text": "අයිතම 5 ක් දක්වා"
+        "text": "up to 5 items; for Premium users - up to 10 items"
       },
       "pack_size": {
         "name": "කට්ටලයක් තුළ ස්ටිකර් ගණන",
@@ -521,6 +536,11 @@
         "name": "පැතිකඩ වීඩියෝවක සැකසුම්",
         "hint": "",
         "text": "800x800px, මෙගා.බ 2 ක් දක්වා"
+      },
+      "photo_resolution": {
+        "name": "Photo resolution",
+        "hint": "when sent with compression",
+        "text": "each side should be less or equal to 1280px, else it will be downscaled so the biggest side will be 1280px"
       }
     }
   }

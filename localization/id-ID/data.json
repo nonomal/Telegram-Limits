@@ -3,52 +3,51 @@
     "name": "Akun",
     "items": {
       "username": {
-        "name": "Nama pengguna",
+        "name": "Ggawuk",
         "hint": "(mis. @username)",
-        "text": "5 sampai 32 karakter"
+        "text": "5 hingga 32 karakter, mulai dari 4 karakter untuk username NFT"
       },
       "bio": {
         "name": "Bio",
         "hint": "",
-        "text": "hingga 70 karakter"
+        "text": "up to 70 characters",
+        "text_premium": "up to 140 characters"
       },
       "name_length": {
         "name": "Panjang Nama Depan",
         "hint": "",
-        "text": "dari 1 sampai 64 karakter"
+        "text": "dari 1 hingga 64 karakter"
       },
       "last_name_length": {
         "name": "Panjang Nama Belakang",
         "hint": "",
-        "text": "dari 0 sampai 64 karakter"
+        "text": "dari 0 hingga 64 karakter"
       },
       "self_destruction": {
         "name": "Periode penghancur akun otomatis",
-        "hint": "jika tidak ada aktifitas",
-        "text": "1, 3, 6 dan 12 bulan (6 secara bawaan)"
+        "hint": "jika tidak ada aktivitas",
+        "text": "1, 3, 6, 12, 18, 24 (12 by default)"
       },
       "spam_ban": {
         "name": "Pemblokiran Spam",
         "hint": "",
-        "text": "3 hari atau lebih"
+        "text": "dari 1 hari hingga selamanya",
+        "text_premium": "from 1 second up to forever"
       },
       "channels_and_chats_number": {
         "name": "Jumlah channel dan supergrup",
         "hint": "yang dapat anda masuki",
-        "text": "hingga 500 (termasuk yang anda miliki sendiri)"
-      },
-      "geochats_number": {
-        "name": "Jumlah obrolan sekitar",
-        "hint": "yang dapat anda masuki",
-        "text": "hingga 5 (termasuk yang anda miliki sendiri)"
+        "text": "up to 500 (including ones you own)",
+        "text_premium": "up to 1000 (including ones you own)"
       },
       "gifs_number": {
         "name": "Jumlah GIF tersimpan",
         "hint": "",
-        "text": "hingga 200"
+        "text": "up to 200",
+        "text_premium": "up to 400"
       },
       "video_length": {
-        "name": "Durasi video-avatar",
+        "name": "Durasi avatar-video",
         "hint": "",
         "text": "hingga 10 detik"
       },
@@ -60,7 +59,13 @@
       "accounts_number": {
         "name": "Jumlah akun",
         "hint": "(klien resmi)",
-        "text": "hingga 3"
+        "text": "up to 3",
+        "text_premium": "up to 4-6 (depends on app)"
+      },
+      "visible_messages": {
+        "name": "Jumlah pesan terlihat",
+        "hint": "(batas bersama antara obrolan pribadi, bot, dan grup lawas)",
+        "text": "tak terbatas; sebelum tahun 2018 - hingga 1.000.000 pesan terlihat: lihat https://twitter.com/telegram/status/1060910769410371584"
       }
     }
   },
@@ -70,22 +75,22 @@
       "participants_number": {
         "name": "Partisipan",
         "hint": "(batasan dapat ditingkatkan)",
-        "text": "hingga 200.000 tapi tak terhingga di Grup Siaran"
+        "text": "hingga 200.000 tetapi tidak terbatas pada Grup Siaran (broadcast)"
       },
       "admins_number": {
         "name": "Jumlah admin",
-        "hint": "di grup",
+        "hint": "dalam grup",
         "text": "hingga 50"
       },
       "bots_amount": {
         "name": "Jumlah bot",
-        "hint": "di grup",
+        "hint": "dalam grup",
         "text": "hingga 20"
       },
       "pinned_number": {
         "name": "Obrolan tersemat di daftar utama",
         "hint": "",
-        "text": "hingga 5 obrolan atau channel + 5 pesan rahasia"
+        "text": "hingga 5 obrolan atau channel + 5 secret chat; untuk pengguna Premium - hingga 10 obrolan atau channel"
       },
       "group_name": {
         "name": "Nama dan deskripsi grup",
@@ -93,14 +98,14 @@
         "text": "hingga 255 karakter"
       },
       "editing": {
-        "name": "Perubahan pesan",
+        "name": "Pengeditan pesan",
         "hint": "",
-        "text": "dalam 48 jam setelah dikirim; selamanya di Tersimpan dan untuk admin dengan hak penyematan"
+        "text": "dalam 48 jam setelah pengiriman; tak terbatas di Pesan Tersimpan dan untuk admin dengan hak penyematan"
       },
       "media_self_destruction": {
         "name": "Penghancuran foto dan video otomatis",
         "hint": "",
-        "text": "1 sampai 60 detik"
+        "text": "1 hingga 60 detik"
       },
       "recent_actions": {
         "name": "Tindakan terkini",
@@ -108,9 +113,9 @@
         "text": "dua hari terakhir"
       },
       "mentions_amount": {
-        "name": "Jumlah penyebutan",
+        "name": "Jumlah mention",
         "hint": "dalam satu pesan",
-        "text": "hingga 50, lebih dari itu pemberitahuan tidak akan dikirim"
+        "text": "hingga 50, lebih dari itu notifikasi tidak akan dikirim"
       },
       "visible_messages": {
         "name": "Jumlah pesan terlihat",
@@ -123,7 +128,7 @@
         "text": "tak terbatas"
       },
       "participants_to_see_stats": {
-        "name": "Jumlah partisipan untuk melihat statistik",
+        "name": "Jumlah anggota untuk melihat statistik",
         "hint": "",
         "text": "setidaknya 500"
       },
@@ -133,7 +138,7 @@
         "text": "sekitar 15-30 menit"
       },
       "participants_for_group_stickers": {
-        "name": "Stiker grup",
+        "name": "Grup-promosikan stiker",
         "hint": "",
         "text": "grup dengan 100+ partisipan"
       },
@@ -150,7 +155,7 @@
       "broadcast_group_access": {
         "name": "Ubah supergrup ke grup siaran",
         "hint": "",
-        "text": "untuk obrolan dengan 199.000+ member"
+        "text": "untuk obrolan dengan 199.000+ anggota"
       },
       "read_receipts_availability": {
         "name": "Ketersediaan tanda dibaca",
@@ -200,7 +205,7 @@
       "username_length": {
         "name": "Panjang @username",
         "hint": "",
-        "text": "5 sampai 32 karakter"
+        "text": "5 hingga 32 karakter"
       },
       "channel_name": {
         "name": "Nama dan dekripsi channel",
@@ -213,7 +218,7 @@
         "text": "hingga 50 akun"
       },
       "editing": {
-        "name": "Perubahan postingan",
+        "name": "Pengeditan postingan",
         "hint": "",
         "text": "tak terbatas (jika channel miliki grup diskusi yang terhubung, postingan yang lebih lama dari 2 minggu tidak akan diperbarui di obrolan)"
       },
@@ -230,7 +235,7 @@
       "channel_deletion": {
         "name": "Penghapusan channel",
         "hint": "",
-        "text": "channels dengan lebih dari 1K hanya dapat dihapus melalui bantuan Telegram"
+        "text": "channel dengan lebih dari 1K hanya dapat dihapus melalui bantuan Telegram"
       },
       "private_channel_access": {
         "name": "Melihat channel privat tanpa bergabung",
@@ -265,12 +270,12 @@
       "media_descriptions": {
         "name": "Keterangan Media",
         "hint": "",
-        "text": "hingga 1.024 karakter"
+        "text": "hingga 1024 karakter; untuk pengguna Premium - hingga 2048 karakter"
       },
       "upload_size": {
-        "name": "Batas ukuran file",
+        "name": "Batas ukuran berkas",
         "hint": "",
-        "text": "hingga 2.0 GB"
+        "text": "hingga 2 GB; untuk pengguna Premium - hingga 4 GB"
       },
       "file_name_length": {
         "name": "Panjang nama berkas",
@@ -290,10 +295,10 @@
       "delayed_messages": {
         "name": "Jumlah pesan terjadwal",
         "hint": "",
-        "text": "hingga 100 item"
+        "text": "hingga 100 item (setiap chat)"
       },
       "delaying_messages": {
-        "name": "Bentang penjadwalan",
+        "name": "Rentang penjadwalan",
         "hint": "",
         "text": "hingga 365 hari"
       }
@@ -305,12 +310,12 @@
       "folder_amount": {
         "name": "Banyak folder",
         "hint": "",
-        "text": "hingga 10 folder"
+        "text": "hingga 10 folder; untuk pengguna Premium - hingga 30 folder"
       },
       "pinned_chats_in_folder": {
         "name": "Pesan tersemat pada folder",
         "hint": "",
-        "text": "hingga 100 obrolan"
+        "text": "hingga 100 obrolan; untuk pengguna Premium - hingga 200 obrolan"
       }
     }
   },
@@ -345,7 +350,7 @@
       "username length": {
         "name": "Panjang @username",
         "hint": "untuk bot",
-        "text": "5 sampai 32 karakter"
+        "text": "5 hingga 32 karakter"
       },
       "info_length": {
         "name": "Panjang informasi bot",
@@ -358,19 +363,24 @@
         "text": "hingga 512 karakter"
       },
       "upload_limit_botapi": {
-        "name": "Batas unggahan file",
-        "hint": "(BotAPI)",
+        "name": "Batas unggahan berkas",
+        "hint": "tanpa server Bot API lokal",
         "text": "hingga 50 MB"
       },
+      "upload_limit_botapi_local": {
+        "name": "Batas unggahan berkas",
+        "hint": "dengan server Bot API lokal",
+        "text": "hingga 2000 MB"
+      },
       "download_limit_botapi": {
-        "name": "batas unduhan file",
-        "hint": "(BotAPI)",
+        "name": "Batas unduhan berkas",
+        "hint": "tanpa server Bot API lokal",
         "text": "hingga 20 MB"
       },
-      "forwarding": {
-        "name": "Pesan diteruskan",
-        "hint": "",
-        "text": "hingga 2.000 per jam"
+      "download_limit_botapi_local": {
+        "name": "Batas unduhan berkas",
+        "hint": "dengan server Bot API lokal",
+        "text": "hingga 2000 MB"
       },
       "keys_in_keyboard_number": {
         "name": "Jumlah tombol papan ketik",
@@ -378,8 +388,8 @@
         "text": "hingga 100 entitas"
       },
       "formatting_data": {
-        "name": "Data pemformatan pesan",
-        "hint": "",
+        "name": "Data markup pesan",
+        "hint": "mis. tombol inline",
         "text": "hingga 10 KB"
       },
       "formatting_entities": {
@@ -387,50 +397,50 @@
         "hint": "(tebal, kursif dll.)",
         "text": "hingga 100 item"
       },
-      "messaging_frequency": {
-        "name": "Frekuensi pesan",
-        "hint": "(dapat ditingkatkan melalui BotSupport)",
-        "text": "hingga 30 pesan per detik; 20 per menit untuk obrolan channel publik"
+      "messaging_frequency_broadcast": {
+        "name": "Frekuensi pesan siaran",
+        "hint": "hanya berlaku ketika secara aktif mengirim pemberitahuan ke obrolan yang tidak aktif",
+        "text": "hingga 30 pesan per detik di seluruh obrolan"
       },
-      "api_requests_frequency": {
-        "name": "Frekuensi permintaan API",
-        "hint": "(dapat ditingkatkan melalui BotSupport)",
-        "text": "hingga 30 permintaan per detik"
+      "messaging_frequency": {
+        "name": "Frekuensi pengiriman pesan",
+        "hint": "di obrolan mana pun",
+        "text": "hingga sekitar satu pesan per detik, kecuali mungkin rentetan singkat"
+      },
+      "messaging_frequency_groups": {
+        "name": "Frekuensi pengiriman pesan",
+        "hint": "dalam obrolan grup",
+        "text": "hingga 20 pesan per detik di obrolan yang sama"
       },
       "bot_commands_count": {
         "name": "Jumlah perintah",
         "hint": "(di BotFather)",
-        "text": "0 sampai 100 perintah"
+        "text": "0 hingga 100 perintah"
       },
       "bot_command_name_length": {
         "name": "Panjang perintah",
         "hint": "(di BotFather)",
-        "text": "dari 1 sampai 32 karakter"
+        "text": "dari 1 hingga 32 karakter"
       },
       "bot_command_description_length": {
         "name": "Panjang deskripsi perintah",
         "hint": "",
-        "text": "minimum: 2 simbol pada BotFather, 3 simbol pada Bot API; maksimum: 256 karakter pada keduanya"
+        "text": "hingga 256 karakter, harus tidak kosong saat diatur lewat Bot API"
       },
       "start_payload_size": {
         "name": "Panjang payload /start bot",
-        "hint": "",
-        "text": "hingga 64 karakter"
+        "hint": "digunakan pada penautan dalam",
+        "text": "hingga 64 bita"
       },
       "bot_alert_length": {
         "name": "Panjang pesan peringatan bot",
         "hint": "",
         "text": "hingga 200 karakter"
       },
-      "username_resolve_limit": {
-        "name": "Batas menetapkan username",
-        "hint": "(untuk bot dan akun pengguna)",
-        "text": "hingga 200 username per hari"
-      },
       "inline_max_items": {
         "name": "Jumlah hasil inline",
         "hint": "",
-        "text": "hingga 50 item"
+        "text": "hingga 50 item per laman"
       }
     }
   },
@@ -440,12 +450,17 @@
       "global_search": {
         "name": "Hasil pencarian umum",
         "hint": "",
-        "text": "hingga 10 item; hingga 3 untuk Android"
+        "text": ""
       },
       "global_search_min_query": {
         "name": "Minimal panjang kueri",
         "hint": "untuk pencarian umum",
         "text": "setidaknya 4 karakter"
+      },
+      "username_resolve_limit": {
+        "name": "Batas menetapkan username",
+        "hint": "(untuk bot dan akun pengguna)",
+        "text": "hingga 200 username per hari"
       }
     }
   },
@@ -460,7 +475,7 @@
       "favorite_stickers": {
         "name": "Jumlah stiker favorit",
         "hint": "",
-        "text": "hingga 5 item"
+        "text": "hingga 5 item; untuk pengguna Premium - hingga 10 item"
       },
       "pack_size": {
         "name": "Jumlah stiker dalam satu paket",
@@ -478,7 +493,7 @@
         "text": "hingga 3 detik"
       },
       "file_size": {
-        "name": "Ukuran file stiker",
+        "name": "Ukuran berkas stiker",
         "hint": "",
         "text": "hingga 512 KB untuk statis, hingga 64 KB untuk animasi"
       },
@@ -521,6 +536,11 @@
         "name": "Properti video avatar",
         "hint": "",
         "text": "800x800px, hingga 2 MB"
+      },
+      "photo_resolution": {
+        "name": "Resolusi foto",
+        "hint": "saat dikirim dengan kompresi",
+        "text": "setiap sisinya harus kurang dari atau sama dengan 1280px, selain itu akan diperkecil sehingga sisi terbesarnya akan menjadi 1280px"
       }
     }
   }

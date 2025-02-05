@@ -5,12 +5,13 @@
       "username": {
         "name": "שם משתמש",
         "hint": "(דוגמה @cameraman)",
-        "text": "מ 5 עד ל 32 תווים"
+        "text": "5 עד 32 תווים, החל מ-4 תווים עבור שמות משתמש NFT"
       },
       "bio": {
         "name": "תיאור המשתמש",
         "hint": "",
-        "text": "מוגבל ל70 תווים"
+        "text": "up to 70 characters",
+        "text_premium": "up to 140 characters"
       },
       "name_length": {
         "name": "אורך השם הפרטי",
@@ -25,27 +26,25 @@
       "self_destruction": {
         "name": "תקופת השמדה עצמית",
         "hint": "אם אין פעילות בחשבון",
-        "text": "1, 3, 6 ו 12 חודשים (6 כברירת מחדל)"
+        "text": "1, 3, 6, 12, 18, 24 (12 by default)"
       },
       "spam_ban": {
         "name": "הגבלת ספאם",
         "hint": "",
-        "text": "3 ימים או יותר"
+        "text": "מיום אחד ועד לתמיד",
+        "text_premium": "from 1 second up to forever"
       },
       "channels_and_chats_number": {
         "name": "מספר הערוצים והסופר קבוצות",
         "hint": "אתה יכול להיות חבר ב",
-        "text": "עד 500 (כולל מה שאתה יצרת)"
-      },
-      "geochats_number": {
-        "name": "Geochats number",
-        "hint": "you can be member of",
-        "text": "up to 5 (including ones you own)"
+        "text": "up to 500 (including ones you own)",
+        "text_premium": "up to 1000 (including ones you own)"
       },
       "gifs_number": {
         "name": "מספר הגיפים השמורים",
         "hint": "",
-        "text": "עד 200"
+        "text": "up to 200",
+        "text_premium": "up to 400"
       },
       "video_length": {
         "name": "אורך של וידאו בפרופיל",
@@ -60,7 +59,13 @@
       "accounts_number": {
         "name": "מספר החשבונות",
         "hint": "(באפליקצייה הרשמית)",
-        "text": "עד 3"
+        "text": "up to 3",
+        "text_premium": "up to 4-6 (depends on app)"
+      },
+      "visible_messages": {
+        "name": "Visible messages number",
+        "hint": "(shared limit between private chats, bots and legacy groups)",
+        "text": "unlimited; before 2018 year - up to 1,000,000 visible messages: see https://twitter.com/telegram/status/1060910769410371584"
       }
     }
   },
@@ -85,7 +90,7 @@
       "pinned_number": {
         "name": "מספר הצ'אטים הנעוצים ברשימה הראשית (לא תיקיות שיצרת)",
         "hint": "",
-        "text": "עד 5 צ'אטים או ערוצים + 5 צ'אטים סודיים"
+        "text": "up to 5 chats or channels + 5 secret chats; for Premium users - up to 10 chats or channels"
       },
       "group_name": {
         "name": "שם ותיאור של קבוצה",
@@ -123,9 +128,9 @@
         "text": "ללא הגבלה"
       },
       "participants_to_see_stats": {
-        "name": "מספר החברים בשביל לראות סטטיסטיקה",
+        "name": "Number of members to see statistics",
         "hint": "",
-        "text": "500 לפחות"
+        "text": "at least 500"
       },
       "username_reservation": {
         "name": "זמן שינוי שם משתמש לקבוצות",
@@ -265,12 +270,12 @@
       "media_descriptions": {
         "name": "כתוביות על מדיה",
         "hint": "",
-        "text": "עד 1,024 תווים"
+        "text": "up to 1024 characters; for Premium users - up to 2048 characters"
       },
       "upload_size": {
         "name": "מגבלת הגודל של הקבצים",
         "hint": "",
-        "text": "עד 2.0 GB"
+        "text": "up to 2 GB; for Premium users - up to 4 GB"
       },
       "file_name_length": {
         "name": "File name length",
@@ -290,7 +295,7 @@
       "delayed_messages": {
         "name": "מספר ההודעות המתוזמנות",
         "hint": "",
-        "text": "עד 100"
+        "text": "up to 100 items (per each chat)"
       },
       "delaying_messages": {
         "name": "טווח הזמנים לתזמון הודעות",
@@ -305,12 +310,12 @@
       "folder_amount": {
         "name": "כמות התיקיות",
         "hint": "",
-        "text": "עד ל 10 תיקיות"
+        "text": "up to 10 folders; for Premium users - up to 30 folders"
       },
       "pinned_chats_in_folder": {
         "name": "צ'אטים מוצמדים בתיקייה",
         "hint": "",
-        "text": "עד ל 100 צ'אטים"
+        "text": "up to 100 chats; for Premium users - up to 200 chats"
       }
     }
   },
@@ -359,18 +364,23 @@
       },
       "upload_limit_botapi": {
         "name": "מגבלה על העלאת קבצים",
-        "hint": "(Bot Api)",
+        "hint": "without local Bot API server",
         "text": "עד 50 MB"
+      },
+      "upload_limit_botapi_local": {
+        "name": "File upload limit",
+        "hint": "with local Bot API server",
+        "text": "up to 2000 MB"
       },
       "download_limit_botapi": {
         "name": "מגבלה על הורדת קבצים",
-        "hint": "(Bot Api)",
+        "hint": "without local Bot API server",
         "text": "עד 20 MB"
       },
-      "forwarding": {
-        "name": "העברת הודעות",
-        "hint": "",
-        "text": "עד ל 2,000 בשעה"
+      "download_limit_botapi_local": {
+        "name": "File download limit",
+        "hint": "with local Bot API server",
+        "text": "up to 2000 MB"
       },
       "keys_in_keyboard_number": {
         "name": "מספר הכפתורים במקלדת",
@@ -378,8 +388,8 @@
         "text": "עד 100"
       },
       "formatting_data": {
-        "name": "גודל עיצוב הטקסט",
-        "hint": "",
+        "name": "Message markup data",
+        "hint": "e.g. inline buttons",
         "text": "עד 10 KB"
       },
       "formatting_entities": {
@@ -387,15 +397,20 @@
         "hint": "(מודגש, מעוצב וכאלה.)",
         "text": "עד 100"
       },
-      "messaging_frequency": {
-        "name": "תדירות ההודעות",
-        "hint": "(ניתן להעלות את המגבלה על ידי BotSupport)",
-        "text": "עד 30 הודעות לשנייה; 20 לדקה לצ'אטים ציבוריים וערוצים"
+      "messaging_frequency_broadcast": {
+        "name": "Message broadcasting frequency",
+        "hint": "only applies when actively sending notifications to otherwise inactive chats",
+        "text": "up to 30 messages per second across chats"
       },
-      "api_requests_frequency": {
-        "name": "תדירות הבקשות ב- BOT API",
-        "hint": "(ניתן להעלות את המגבלה על ידי BotSupport)",
-        "text": "עד ל 30 בקשות לשנייה"
+      "messaging_frequency": {
+        "name": "Message sending frequency",
+        "hint": "in any chat",
+        "text": "up to roughly one message per second, except maybe short bursts"
+      },
+      "messaging_frequency_groups": {
+        "name": "Message sending frequency",
+        "hint": "in group chats",
+        "text": "up to 20 messages per second in the same chat"
       },
       "bot_commands_count": {
         "name": "כמות פקודות",
@@ -410,27 +425,22 @@
       "bot_command_description_length": {
         "name": "אורך התיאור של פקודה",
         "hint": "",
-        "text": "מינימום: 2 תווים ב BotFather, 3 תווים בBot API; מקסימום: 256 תווים"
+        "text": "up to 256 characters, must be non-empty when set via Bot API"
       },
       "start_payload_size": {
         "name": "כמות המטען של הפקודה /start ב- deep link",
-        "hint": "",
-        "text": "עד 64 תווים"
+        "hint": "used in deep linking",
+        "text": "up to 64 bytes"
       },
       "bot_alert_length": {
         "name": "מספר התווים המרבי בהודעת אזהרה (popup)",
         "hint": "",
         "text": "עד 200 תווים"
       },
-      "username_resolve_limit": {
-        "name": "מגבלת זיהוי שמות משתמשים",
-        "hint": "(לחשבונות משתמשים ובוטים)",
-        "text": "עד 200 שמות משתמשים ביום"
-      },
       "inline_max_items": {
         "name": "מספר התוצאות להצגה במצב אינליין",
         "hint": "",
-        "text": "עד 50 פריטים"
+        "text": "up to 50 items per page"
       }
     }
   },
@@ -440,12 +450,17 @@
       "global_search": {
         "name": "תוצאות חיפוש גלובליות",
         "hint": "",
-        "text": "עד 10 ערוצים וסופר קבוצות; עד 3 באנדרואיד"
+        "text": ""
       },
       "global_search_min_query": {
         "name": "אורך שאילתה מינימלי",
         "hint": "לחיפוש כללי",
         "text": "4 תווים לפחות"
+      },
+      "username_resolve_limit": {
+        "name": "Username resolve limit",
+        "hint": "(for both bots and user accounts)",
+        "text": "up to 200 usernames daily"
       }
     }
   },
@@ -460,7 +475,7 @@
       "favorite_stickers": {
         "name": "מספר הסטיקרים המועדפים",
         "hint": "",
-        "text": "עד 5"
+        "text": "up to 5 items; for Premium users - up to 10 items"
       },
       "pack_size": {
         "name": "סטיקרים בחבילה",
@@ -521,6 +536,11 @@
         "name": "וידאו בפרופיל (במקום תמונה)",
         "hint": "",
         "text": "800x800px, עד ל 2 MB"
+      },
+      "photo_resolution": {
+        "name": "Photo resolution",
+        "hint": "when sent with compression",
+        "text": "each side should be less or equal to 1280px, else it will be downscaled so the biggest side will be 1280px"
       }
     }
   }
